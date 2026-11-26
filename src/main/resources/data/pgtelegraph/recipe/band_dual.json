@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "A": {
+   "item": "pgtelegraph:band_2m"
+  },
+  "B": {
+   "item": "pgtelegraph:band_70cm"
+  }
+ },
+ "pattern": [
+  "AB"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:band_dual"
+ }
+}

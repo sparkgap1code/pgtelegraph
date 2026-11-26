@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "R": {
+   "item": "pgtelegraph:relay"
+  },
+  "B": {
+   "item": "pgtelegraph:battery_pack_lead_acid"
+  },
+  "W": {
+   "item": "minecraft:redstone"
+  },
+  "P": {
+   "item": "minecraft:oak_slab"
+  }
+ },
+ "pattern": [
+  "R R",
+  "BWB",
+  "PPP"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:telegraph_repeater"
+ }
+}

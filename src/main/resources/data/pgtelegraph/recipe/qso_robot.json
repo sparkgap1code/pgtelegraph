@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "T": {
+   "item": "pgtelegraph:transmitter"
+  },
+  "P": {
+   "item": "create:precision_mechanism"
+  },
+  "R": {
+   "item": "pgtelegraph:receiver"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "ETE",
+  "PRP",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:qso_robot"
+ }
+}

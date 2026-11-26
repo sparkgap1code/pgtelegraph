@@ -1,0 +1,14 @@
+{
+ "values": [
+  "pgtelegraph:telegraph_key",
+  "pgtelegraph:sounder",
+  "pgtelegraph:relay",
+  "pgtelegraph:inker",
+  "pgtelegraph:switchboard",
+  "pgtelegraph:loading_coil",
+  "pgtelegraph:litz_loading_coil",
+  "pgtelegraph:telegraph_pole",
+  "pgtelegraph:wooden_peg",
+  "pgtelegraph:broadcast_radio"
+ ]
+}

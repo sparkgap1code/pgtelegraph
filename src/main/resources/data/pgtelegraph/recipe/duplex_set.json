@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "R": {
+   "item": "pgtelegraph:relay"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "W": {
+   "item": "minecraft:redstone"
+  },
+  "S": {
+   "item": "minecraft:redstone_torch"
+  },
+  "P": {
+   "item": "minecraft:dark_oak_slab"
+  }
+ },
+ "pattern": [
+  "RCR",
+  "WSW",
+  "PPP"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:duplex_set"
+ }
+}

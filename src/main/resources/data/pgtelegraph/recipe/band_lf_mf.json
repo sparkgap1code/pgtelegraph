@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  }
+ },
+ "pattern": [
+  "CWC"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:band_lf_mf"
+ }
+}

@@ -1,0 +1,18 @@
+Power Grid Telegraph
+Copyright (C) 2026 the Power Grid Telegraph authors
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version. See LICENSE.
+
+Third-party material
+--------------------
+- assets/pgtelegraph/textures/item/patch_cord.png is a recoloured derivative of
+  assets/powergrid/textures/item/insulated_copper_wire.png from Create: Power Grid
+  by patryk3211, licensed under the Apache License 2.0
+  (https://github.com/patryk3211/PowerGrid). Changes: hue shifted, plug pixels added.
+- Bundled libraries (jar-in-jar): JLayer 1.0.1 (LGPL-2.1, MP3 decoding) and
+  JCodec 0.2.5 (BSD 2-Clause, H.264 encoding).
+- Block and item models reference (do not copy) textures from Minecraft, Create
+  and Create: Power Grid at run time.

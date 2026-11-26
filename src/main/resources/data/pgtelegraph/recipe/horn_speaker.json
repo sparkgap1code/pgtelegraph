@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "S": {
+   "item": "create:iron_sheet"
+  },
+  "K": {
+   "item": "pgtelegraph:speaker"
+  }
+ },
+ "pattern": [
+  " SS",
+  "KSS",
+  " SS"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:horn_speaker"
+ }
+}

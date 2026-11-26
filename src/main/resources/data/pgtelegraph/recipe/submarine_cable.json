@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "R": {
+   "item": "minecraft:black_dye"
+  },
+  "C": {
+   "tag": "c:ingots/copper"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "RRR",
+  "CCC",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:submarine_cable"
+ }
+}

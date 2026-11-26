@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "S": {
+   "item": "minecraft:string"
+  },
+  "C": {
+   "item": "pgtelegraph:loading_coil"
+  },
+  "B": {
+   "item": "create:brass_sheet"
+  }
+ },
+ "pattern": [
+  "WSW",
+  "BCB",
+  "WSW"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:litz_loading_coil"
+ }
+}

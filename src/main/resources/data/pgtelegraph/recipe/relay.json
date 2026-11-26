@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "powergrid:copper_coil"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "W": {
+      "tag": "c:wires/copper"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "WIW",
+    " C ",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pgtelegraph:relay"
+  }
+}

@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "C": {
+   "item": "pgtelegraph:camera"
+  },
+  "L": {
+   "tag": "c:leathers"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  }
+ },
+ "pattern": [
+  "RCR",
+  " L "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:bodycam"
+ }
+}

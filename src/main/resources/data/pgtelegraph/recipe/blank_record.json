@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "B": {
+   "item": "minecraft:black_dye"
+  },
+  "R": {
+   "item": "minecraft:clay_ball"
+  }
+ },
+ "pattern": [
+  " B ",
+  "BRB",
+  " B "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:blank_record"
+ }
+}

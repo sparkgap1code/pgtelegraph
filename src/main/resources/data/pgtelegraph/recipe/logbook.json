@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "redstone",
+ "ingredients": [
+  {
+   "item": "minecraft:book"
+  },
+  {
+   "item": "minecraft:feather"
+  },
+  {
+   "item": "minecraft:ink_sac"
+  }
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:logbook"
+ }
+}

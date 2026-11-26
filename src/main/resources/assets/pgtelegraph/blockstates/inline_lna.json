@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "burnt=false": {
+   "model": "pgtelegraph:block/inline_lna"
+  },
+  "burnt=true": {
+   "model": "pgtelegraph:block/inline_lna_burnt"
+  }
+ }
+}

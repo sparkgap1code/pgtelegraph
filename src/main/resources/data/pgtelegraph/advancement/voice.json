@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:microphone"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.voice"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.voice.desc"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:heard",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

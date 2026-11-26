@@ -1,0 +1,173 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "base": "block/black_concrete",
+  "rod": "block/iron_block",
+  "brass": "create:block/brass_block",
+  "dish": "block/white_concrete",
+  "feed": "block/gray_concrete",
+  "particle": "block/black_concrete"
+ },
+ "elements": [
+  {
+   "from": [
+    5,
+    0,
+    5
+   ],
+   "to": [
+    11,
+    3,
+    11
+   ],
+   "faces": {
+    "north": {
+     "texture": "#base"
+    },
+    "south": {
+     "texture": "#base"
+    },
+    "east": {
+     "texture": "#base"
+    },
+    "west": {
+     "texture": "#base"
+    },
+    "up": {
+     "texture": "#base"
+    },
+    "down": {
+     "texture": "#base"
+    }
+   }
+  },
+  {
+   "from": [
+    6,
+    3,
+    6
+   ],
+   "to": [
+    10,
+    3.5,
+    10
+   ],
+   "faces": {
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    },
+    "down": {
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "from": [
+    7.6,
+    3.5,
+    7.6
+   ],
+   "to": [
+    8.4,
+    14,
+    8.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#rod"
+    },
+    "south": {
+     "texture": "#rod"
+    },
+    "east": {
+     "texture": "#rod"
+    },
+    "west": {
+     "texture": "#rod"
+    },
+    "up": {
+     "texture": "#rod"
+    },
+    "down": {
+     "texture": "#rod"
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    2.2,
+    7.7
+   ],
+   "to": [
+    14,
+    2.6,
+    8.3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#rod"
+    },
+    "south": {
+     "texture": "#rod"
+    },
+    "east": {
+     "texture": "#rod"
+    },
+    "west": {
+     "texture": "#rod"
+    },
+    "up": {
+     "texture": "#rod"
+    },
+    "down": {
+     "texture": "#rod"
+    }
+   }
+  },
+  {
+   "from": [
+    7.7,
+    2.2,
+    2
+   ],
+   "to": [
+    8.3,
+    2.6,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#rod"
+    },
+    "south": {
+     "texture": "#rod"
+    },
+    "east": {
+     "texture": "#rod"
+    },
+    "west": {
+     "texture": "#rod"
+    },
+    "up": {
+     "texture": "#rod"
+    },
+    "down": {
+     "texture": "#rod"
+    }
+   }
+  }
+ ]
+}

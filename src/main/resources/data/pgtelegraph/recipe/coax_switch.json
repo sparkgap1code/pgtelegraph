@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "item": "pgtelegraph:coax_thin"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "WRW",
+  "IWI"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:coax_switch"
+ }
+}

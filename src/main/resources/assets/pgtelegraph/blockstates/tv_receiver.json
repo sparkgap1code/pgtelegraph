@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/tv_receiver"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/tv_receiver",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/tv_receiver",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/tv_receiver",
+   "y": 270
+  }
+ }
+}

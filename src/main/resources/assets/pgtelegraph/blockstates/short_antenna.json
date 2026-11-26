@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "dipole=false": {
+   "model": "pgtelegraph:block/short_antenna_whip"
+  },
+  "dipole=true": {
+   "model": "pgtelegraph:block/short_antenna_dipole"
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/tape_recorder"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/tape_recorder",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/tape_recorder",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/tape_recorder",
+   "y": 270
+  }
+ }
+}

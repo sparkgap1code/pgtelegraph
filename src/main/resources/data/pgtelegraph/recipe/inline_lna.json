@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  }
+ },
+ "pattern": [
+  "IQI",
+  "RCR",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:inline_lna"
+ }
+}

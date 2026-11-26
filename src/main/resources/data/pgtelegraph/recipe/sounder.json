@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "powergrid:copper_coil"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "B": {
+      "tag": "c:ingots/brass"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    " I ",
+    "CBC",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pgtelegraph:sounder"
+  }
+}

@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "WEW",
+  " I "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:regulator_linear"
+ }
+}

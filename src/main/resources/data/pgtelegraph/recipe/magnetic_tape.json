@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "R": {
+   "item": "minecraft:iron_nugget"
+  },
+  "I": {
+   "item": "minecraft:redstone"
+  }
+ },
+ "pattern": [
+  "P P",
+  "RIR"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:magnetic_tape"
+ }
+}

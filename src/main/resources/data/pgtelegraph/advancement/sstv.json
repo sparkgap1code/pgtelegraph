@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:sstv_monitor"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.sstv"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.sstv.desc"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:satellite",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

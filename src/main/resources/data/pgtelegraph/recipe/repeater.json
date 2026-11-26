@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "redstone",
+ "ingredients": [
+  {
+   "item": "pgtelegraph:transmitter"
+  },
+  {
+   "item": "pgtelegraph:receiver"
+  },
+  {
+   "item": "minecraft:quartz"
+  }
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:repeater"
+ }
+}

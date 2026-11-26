@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "F": {
+   "item": "minecraft:iron_nugget"
+  },
+  "C": {
+   "item": "pgtelegraph:emi_filter"
+  }
+ },
+ "pattern": [
+  "FCF"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:emi_filter_ferrite"
+ }
+}

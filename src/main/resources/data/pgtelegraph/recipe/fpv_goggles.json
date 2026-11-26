@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "T": {
+   "item": "pgtelegraph:tv_receiver"
+  },
+  "L": {
+   "tag": "c:leathers"
+  },
+  "G": {
+   "tag": "c:glass_panes"
+  }
+ },
+ "pattern": [
+  "LTL",
+  "G G"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:fpv_goggles"
+ }
+}

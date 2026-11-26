@@ -1,0 +1,79 @@
+{
+ "variants": {
+  "facing=north,tilt=0": {
+   "model": "pgtelegraph:block/tv_camera"
+  },
+  "facing=north,tilt=1": {
+   "model": "pgtelegraph:block/tv_camera"
+  },
+  "facing=north,tilt=2": {
+   "model": "pgtelegraph:block/tv_camera"
+  },
+  "facing=north,tilt=3": {
+   "model": "pgtelegraph:block/tv_camera"
+  },
+  "facing=north,tilt=4": {
+   "model": "pgtelegraph:block/tv_camera"
+  },
+  "facing=east,tilt=0": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 90
+  },
+  "facing=east,tilt=1": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 90
+  },
+  "facing=east,tilt=2": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 90
+  },
+  "facing=east,tilt=3": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 90
+  },
+  "facing=east,tilt=4": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 90
+  },
+  "facing=south,tilt=0": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 180
+  },
+  "facing=south,tilt=1": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 180
+  },
+  "facing=south,tilt=2": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 180
+  },
+  "facing=south,tilt=3": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 180
+  },
+  "facing=south,tilt=4": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 180
+  },
+  "facing=west,tilt=0": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 270
+  },
+  "facing=west,tilt=1": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 270
+  },
+  "facing=west,tilt=2": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 270
+  },
+  "facing=west,tilt=3": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 270
+  },
+  "facing=west,tilt=4": {
+   "model": "pgtelegraph:block/tv_camera",
+   "y": 270
+  }
+ }
+}

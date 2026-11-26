@@ -1,0 +1,35 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "N": {
+   "tag": "c:nuggets/iron"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "L": [
+   {
+    "tag": "c:ingots/lead"
+   },
+   {
+    "tag": "c:ingots/copper"
+   }
+  ],
+  "W": {
+   "item": "minecraft:water_bucket"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "NRN",
+  "LWL",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:battery_pack_lead_acid"
+ }
+}

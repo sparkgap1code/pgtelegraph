@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "N": {
+   "tag": "c:nuggets/iron"
+  },
+  "B": {
+   "tag": "c:ingots/brass"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "pattern": [
+  "NNN",
+  "BIB",
+  "PPP"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:perforator"
+ }
+}

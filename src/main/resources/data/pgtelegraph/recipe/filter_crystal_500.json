@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  }
+ },
+ "pattern": [
+  "WQW"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:filter_crystal_500"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "WCW",
+  "RIR"
+ ],
+ "result": {
+  "count": 2,
+  "id": "pgtelegraph:repair_kit"
+ }
+}

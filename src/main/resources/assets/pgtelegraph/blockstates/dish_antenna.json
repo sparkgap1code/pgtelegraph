@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/dish_antenna"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/dish_antenna",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/dish_antenna",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/dish_antenna",
+   "y": 270
+  }
+ }
+}

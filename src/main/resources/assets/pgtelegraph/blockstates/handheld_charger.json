@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "facing=north,loaded=false": {
+   "model": "pgtelegraph:block/handheld_charger"
+  },
+  "facing=north,loaded=true": {
+   "model": "pgtelegraph:block/handheld_charger_loaded"
+  },
+  "facing=east,loaded=false": {
+   "model": "pgtelegraph:block/handheld_charger",
+   "y": 90
+  },
+  "facing=east,loaded=true": {
+   "model": "pgtelegraph:block/handheld_charger_loaded",
+   "y": 90
+  },
+  "facing=south,loaded=false": {
+   "model": "pgtelegraph:block/handheld_charger",
+   "y": 180
+  },
+  "facing=south,loaded=true": {
+   "model": "pgtelegraph:block/handheld_charger_loaded",
+   "y": 180
+  },
+  "facing=west,loaded=false": {
+   "model": "pgtelegraph:block/handheld_charger",
+   "y": 270
+  },
+  "facing=west,loaded=true": {
+   "model": "pgtelegraph:block/handheld_charger_loaded",
+   "y": 270
+  }
+ }
+}

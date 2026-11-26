@@ -1,0 +1,29 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:telegraph_key"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.root"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.root.desc"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "background": "minecraft:textures/block/black_concrete.png"
+ },
+ "criteria": {
+  "has": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "pgtelegraph:telegraph_key"
+     }
+    ]
+   }
+  }
+ }
+}

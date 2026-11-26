@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "K": {
+   "item": "minecraft:black_dye"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "B": {
+   "tag": "c:ingots/brass"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "pattern": [
+  "IKI",
+  "CBC",
+  "PPP"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:inker"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/duplex_set"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/duplex_set",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/duplex_set",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/duplex_set",
+   "y": 270
+  }
+ }
+}

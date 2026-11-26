@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "N": {
+   "tag": "c:nuggets/iron"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  }
+ },
+ "pattern": [
+  "NNN",
+  "III",
+  " W "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:yagi_antenna"
+ }
+}

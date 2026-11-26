@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "Q": {
+   "item": "minecraft:clay_ball"
+  }
+ },
+ "pattern": [
+  "CQC"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:lpf_lf"
+ }
+}

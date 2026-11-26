@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:logbook"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.contest"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.contest.desc"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:qsl10",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

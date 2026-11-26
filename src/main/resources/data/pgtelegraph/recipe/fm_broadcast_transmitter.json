@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "T": {
+   "item": "pgtelegraph:transmitter"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "B": {
+   "item": "pgtelegraph:band_vhf_uhf"
+  }
+ },
+ "pattern": [
+  "EEE",
+  "CTC",
+  "IBI"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:fm_broadcast_transmitter"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/broadcast_radio"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/broadcast_radio",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/broadcast_radio",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/broadcast_radio",
+   "y": 270
+  }
+ }
+}

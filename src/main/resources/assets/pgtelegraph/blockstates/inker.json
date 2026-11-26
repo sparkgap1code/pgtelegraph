@@ -1,0 +1,64 @@
+{
+ "variants": {
+  "energized=false,facing=north,has_tape=false": {
+   "model": "pgtelegraph:block/inker"
+  },
+  "energized=true,facing=north,has_tape=false": {
+   "model": "pgtelegraph:block/inker_on"
+  },
+  "energized=false,facing=north,has_tape=true": {
+   "model": "pgtelegraph:block/inker_tape"
+  },
+  "energized=true,facing=north,has_tape=true": {
+   "model": "pgtelegraph:block/inker_tape_on"
+  },
+  "energized=false,facing=east,has_tape=false": {
+   "model": "pgtelegraph:block/inker",
+   "y": 90
+  },
+  "energized=true,facing=east,has_tape=false": {
+   "model": "pgtelegraph:block/inker_on",
+   "y": 90
+  },
+  "energized=false,facing=east,has_tape=true": {
+   "model": "pgtelegraph:block/inker_tape",
+   "y": 90
+  },
+  "energized=true,facing=east,has_tape=true": {
+   "model": "pgtelegraph:block/inker_tape_on",
+   "y": 90
+  },
+  "energized=false,facing=south,has_tape=false": {
+   "model": "pgtelegraph:block/inker",
+   "y": 180
+  },
+  "energized=true,facing=south,has_tape=false": {
+   "model": "pgtelegraph:block/inker_on",
+   "y": 180
+  },
+  "energized=false,facing=south,has_tape=true": {
+   "model": "pgtelegraph:block/inker_tape",
+   "y": 180
+  },
+  "energized=true,facing=south,has_tape=true": {
+   "model": "pgtelegraph:block/inker_tape_on",
+   "y": 180
+  },
+  "energized=false,facing=west,has_tape=false": {
+   "model": "pgtelegraph:block/inker",
+   "y": 270
+  },
+  "energized=true,facing=west,has_tape=false": {
+   "model": "pgtelegraph:block/inker_on",
+   "y": 270
+  },
+  "energized=false,facing=west,has_tape=true": {
+   "model": "pgtelegraph:block/inker_tape",
+   "y": 270
+  },
+  "energized=true,facing=west,has_tape=true": {
+   "model": "pgtelegraph:block/inker_tape_on",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/aprs_station"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/aprs_station",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/aprs_station",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/aprs_station",
+   "y": 270
+  }
+ }
+}

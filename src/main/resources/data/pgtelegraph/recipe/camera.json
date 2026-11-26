@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "B": {
+   "item": "minecraft:stone_button"
+  },
+  "G": {
+   "item": "minecraft:glass_pane"
+  }
+ },
+ "pattern": [
+  "IBI",
+  "IGI"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:camera"
+ }
+}

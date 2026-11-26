@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "N": {
+   "tag": "c:nuggets/iron"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  }
+ },
+ "pattern": [
+  " N ",
+  " N ",
+  "WIW"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:vhf_whip"
+ }
+}

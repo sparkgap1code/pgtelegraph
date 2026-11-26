@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/horn_speaker"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/horn_speaker",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/horn_speaker",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/horn_speaker",
+   "y": 270
+  }
+ }
+}

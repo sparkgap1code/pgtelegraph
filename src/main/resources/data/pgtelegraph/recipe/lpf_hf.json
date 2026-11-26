@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  }
+ },
+ "pattern": [
+  "WQW",
+  " C "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:lpf_hf"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  }
+ },
+ "pattern": [
+  "W W",
+  " W ",
+  "W W"
+ ],
+ "result": {
+  "count": 8,
+  "id": "pgtelegraph:top_load_wire"
+ }
+}

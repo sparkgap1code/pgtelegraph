@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "T": {
+   "item": "pgtelegraph:transmitter"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "G": {
+   "item": "minecraft:gravel"
+  }
+ },
+ "pattern": [
+  "RGR",
+  "GTG",
+  "RGR"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:jammer"
+ }
+}

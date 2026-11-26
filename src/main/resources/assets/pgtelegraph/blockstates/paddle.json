@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "dah=false,dit=false,facing=north": {
+      "model": "pgtelegraph:block/paddle"
+    },
+    "dah=true,dit=false,facing=north": {
+      "model": "pgtelegraph:block/paddle_dah"
+    },
+    "dah=false,dit=true,facing=north": {
+      "model": "pgtelegraph:block/paddle_dit"
+    },
+    "dah=true,dit=true,facing=north": {
+      "model": "pgtelegraph:block/paddle_dit_dah"
+    },
+    "dah=false,dit=false,facing=east": {
+      "model": "pgtelegraph:block/paddle",
+      "y": 90
+    },
+    "dah=true,dit=false,facing=east": {
+      "model": "pgtelegraph:block/paddle_dah",
+      "y": 90
+    },
+    "dah=false,dit=true,facing=east": {
+      "model": "pgtelegraph:block/paddle_dit",
+      "y": 90
+    },
+    "dah=true,dit=true,facing=east": {
+      "model": "pgtelegraph:block/paddle_dit_dah",
+      "y": 90
+    },
+    "dah=false,dit=false,facing=south": {
+      "model": "pgtelegraph:block/paddle",
+      "y": 180
+    },
+    "dah=true,dit=false,facing=south": {
+      "model": "pgtelegraph:block/paddle_dah",
+      "y": 180
+    },
+    "dah=false,dit=true,facing=south": {
+      "model": "pgtelegraph:block/paddle_dit",
+      "y": 180
+    },
+    "dah=true,dit=true,facing=south": {
+      "model": "pgtelegraph:block/paddle_dit_dah",
+      "y": 180
+    },
+    "dah=false,dit=false,facing=west": {
+      "model": "pgtelegraph:block/paddle",
+      "y": 270
+    },
+    "dah=true,dit=false,facing=west": {
+      "model": "pgtelegraph:block/paddle_dah",
+      "y": 270
+    },
+    "dah=false,dit=true,facing=west": {
+      "model": "pgtelegraph:block/paddle_dit",
+      "y": 270
+    },
+    "dah=true,dit=true,facing=west": {
+      "model": "pgtelegraph:block/paddle_dit_dah",
+      "y": 270
+    }
+  }
+}

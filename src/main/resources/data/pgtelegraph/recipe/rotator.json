@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "B": {
+   "tag": "c:ingots/brass"
+  },
+  "C": {
+   "item": "create:cogwheel"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "G": {
+   "item": "create:gearbox"
+  },
+  "S": {
+   "item": "create:shaft"
+  }
+ },
+ "pattern": [
+  "BCB",
+  "IGI",
+  "ISI"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:rotator"
+ }
+}

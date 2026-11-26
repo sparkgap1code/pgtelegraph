@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "T": {
+   "item": "pgtelegraph:transmitter"
+  }
+ },
+ "pattern": [
+  "EGE",
+  " T "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:sstv_transmitter"
+ }
+}

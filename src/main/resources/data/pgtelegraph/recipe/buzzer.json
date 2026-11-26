@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "powergrid:copper_coil"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "N": {
+      "item": "minecraft:note_block"
+    }
+  },
+  "pattern": [
+    " I ",
+    "CNC",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pgtelegraph:buzzer"
+  }
+}

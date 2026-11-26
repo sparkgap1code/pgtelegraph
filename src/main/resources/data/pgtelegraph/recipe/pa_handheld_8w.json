@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "N": {
+   "tag": "c:nuggets/iron"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "WEW",
+  "NIN"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:pa_handheld_8w"
+ }
+}

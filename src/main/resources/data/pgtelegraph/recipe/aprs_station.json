@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "T": {
+   "item": "pgtelegraph:receiver"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "QEQ",
+  "RTR",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:aprs_station"
+ }
+}

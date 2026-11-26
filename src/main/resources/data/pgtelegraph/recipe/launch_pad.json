@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "R": {
+   "item": "minecraft:red_concrete"
+  },
+  "S": {
+   "item": "minecraft:smooth_stone"
+  },
+  "I": {
+   "tag": "c:storage_blocks/iron"
+  }
+ },
+ "pattern": [
+  "R  ",
+  "RSS",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:launch_pad"
+ }
+}

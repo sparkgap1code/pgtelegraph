@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/microphone"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/microphone",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/microphone",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/microphone",
+   "y": 270
+  }
+ }
+}

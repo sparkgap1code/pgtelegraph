@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "M": {
+   "item": "create:precision_mechanism"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "PMP",
+  "CWC",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:teleprinter"
+ }
+}

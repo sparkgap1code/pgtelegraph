@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "T": {
+   "item": "pgtelegraph:antenna_tuner"
+  },
+  "G": {
+   "tag": "c:glass_blocks"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  " G ",
+  "GTG",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:remote_tuner"
+ }
+}

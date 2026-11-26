@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "redstone",
+ "ingredients": [
+  {
+   "item": "minecraft:glass_pane"
+  },
+  {
+   "tag": "c:wires/copper"
+  },
+  {
+   "tag": "c:wires/copper"
+  }
+ ],
+ "result": {
+  "count": 4,
+  "id": "pgtelegraph:fuse_5a"
+ }
+}

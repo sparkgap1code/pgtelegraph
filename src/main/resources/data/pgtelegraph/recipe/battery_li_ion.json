@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "N": {
+   "tag": "c:nuggets/iron"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "L": {
+   "item": "minecraft:lapis_lazuli"
+  }
+ },
+ "pattern": [
+  "NRN",
+  "RLR",
+  "NRN"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:battery_li_ion"
+ }
+}

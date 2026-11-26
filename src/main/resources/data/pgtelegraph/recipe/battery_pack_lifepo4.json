@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "N": {
+   "tag": "c:nuggets/iron"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "F": {
+   "item": "minecraft:bone_meal"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "NRN",
+  "RFR",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:battery_pack_lifepo4"
+ }
+}

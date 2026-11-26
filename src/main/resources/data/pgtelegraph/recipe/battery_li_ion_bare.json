@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "L": {
+   "item": "minecraft:lapis_lazuli"
+  }
+ },
+ "pattern": [
+  "RLR"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:battery_li_ion_bare"
+ }
+}

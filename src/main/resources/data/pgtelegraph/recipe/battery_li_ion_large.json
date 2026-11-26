@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "B": {
+   "item": "pgtelegraph:battery_li_ion"
+  }
+ },
+ "pattern": [
+  "BB"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:battery_li_ion_large"
+ }
+}

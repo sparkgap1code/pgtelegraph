@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/perforator"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/perforator",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/perforator",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/perforator",
+   "y": 270
+  }
+ }
+}

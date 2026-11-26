@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "C": {
+   "item": "minecraft:copper_ingot"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  }
+ },
+ "pattern": [
+  "III",
+  "RCR",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:vcr"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "C": {
+   "item": "minecraft:copper_ingot"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  }
+ },
+ "pattern": [
+  "CCC",
+  "WQW"
+ ],
+ "result": {
+  "count": 4,
+  "id": "pgtelegraph:phased_array"
+ }
+}

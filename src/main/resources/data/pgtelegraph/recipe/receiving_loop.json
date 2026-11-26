@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "WWW",
+  "W W",
+  "WIW"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:receiving_loop"
+ }
+}

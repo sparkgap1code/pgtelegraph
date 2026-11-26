@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/mirror_galvanometer"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/mirror_galvanometer",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/mirror_galvanometer",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/mirror_galvanometer",
+   "y": 270
+  }
+ }
+}

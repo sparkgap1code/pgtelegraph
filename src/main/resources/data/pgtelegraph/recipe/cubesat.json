@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "L": {
+   "item": "minecraft:lapis_lazuli"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "P": {
+   "item": "create:precision_mechanism"
+  },
+  "D": {
+   "item": "minecraft:daylight_detector"
+  }
+ },
+ "pattern": [
+  "LEL",
+  "QPQ",
+  "LDL"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:cubesat"
+ }
+}

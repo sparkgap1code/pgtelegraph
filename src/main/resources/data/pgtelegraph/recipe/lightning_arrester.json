@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "item": "pgtelegraph:coax_thin"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "W",
+  "Q",
+  "I"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:lightning_arrester"
+ }
+}

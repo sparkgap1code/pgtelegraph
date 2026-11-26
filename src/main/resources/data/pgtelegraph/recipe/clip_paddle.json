@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "redstone",
+ "ingredients": [
+  {
+   "item": "pgtelegraph:keyer_paddle"
+  },
+  {
+   "item": "powergrid:insulated_copper_wire"
+  },
+  {
+   "item": "powergrid:insulated_copper_wire"
+  },
+  {
+   "item": "minecraft:iron_nugget"
+  },
+  {
+   "item": "minecraft:iron_nugget"
+  }
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:clip_paddle"
+ }
+}

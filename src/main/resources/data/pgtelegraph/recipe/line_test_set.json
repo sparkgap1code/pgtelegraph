@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "C": {
+   "item": "minecraft:compass"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  }
+ },
+ "pattern": [
+  "GCG",
+  "IRI",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:line_test_set"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "pgtelegraph:block/antenna_rod"
+  },
+  "axis=z": {
+   "model": "pgtelegraph:block/antenna_rod",
+   "x": 90
+  },
+  "axis=x": {
+   "model": "pgtelegraph:block/antenna_rod",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

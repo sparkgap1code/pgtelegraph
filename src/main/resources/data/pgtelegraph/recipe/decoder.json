@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "pattern": [
+  "GEG",
+  "CWC",
+  "PPP"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:decoder"
+ }
+}

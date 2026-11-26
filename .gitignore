@@ -1,0 +1,17 @@
+# build output
+build/
+.gradle/
+run/
+runs/
+out/
+*.log
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+bin/
+# compile-only jars of other mods (not ours to redistribute)
+libs/

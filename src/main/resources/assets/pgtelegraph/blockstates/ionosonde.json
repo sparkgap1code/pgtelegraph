@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/ionosonde"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/ionosonde",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/ionosonde",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/ionosonde",
+   "y": 270
+  }
+ }
+}

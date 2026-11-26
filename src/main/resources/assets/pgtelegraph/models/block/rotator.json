@@ -1,0 +1,108 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "case": "block/iron_block",
+  "plate": "create:block/brass_block",
+  "gear": "block/gray_concrete",
+  "shaft": "create:block/axis",
+  "particle": "block/iron_block"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    11,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#case"
+    },
+    "south": {
+     "texture": "#case"
+    },
+    "east": {
+     "texture": "#case"
+    },
+    "west": {
+     "texture": "#case"
+    },
+    "up": {
+     "texture": "#case"
+    },
+    "down": {
+     "texture": "#case"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    11,
+    3
+   ],
+   "to": [
+    13,
+    13,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#gear"
+    },
+    "south": {
+     "texture": "#gear"
+    },
+    "east": {
+     "texture": "#gear"
+    },
+    "west": {
+     "texture": "#gear"
+    },
+    "up": {
+     "texture": "#gear"
+    },
+    "down": {
+     "texture": "#gear"
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    13,
+    2
+   ],
+   "to": [
+    14,
+    16,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#plate"
+    },
+    "south": {
+     "texture": "#plate"
+    },
+    "east": {
+     "texture": "#plate"
+    },
+    "west": {
+     "texture": "#plate"
+    },
+    "up": {
+     "texture": "#plate"
+    },
+    "down": {
+     "texture": "#plate"
+    }
+   }
+  }
+ ]
+}

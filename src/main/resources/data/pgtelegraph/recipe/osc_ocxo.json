@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "N": {
+   "tag": "c:nuggets/iron"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  }
+ },
+ "pattern": [
+  "NQN",
+  "WRW"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:osc_ocxo"
+ }
+}

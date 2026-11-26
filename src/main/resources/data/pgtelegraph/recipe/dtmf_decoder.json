@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "K": {
+   "item": "minecraft:stone_button"
+  }
+ },
+ "pattern": [
+  " R ",
+  "QEQ",
+  "IKI"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:dtmf_decoder"
+ }
+}

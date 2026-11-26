@@ -1,0 +1,41 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "rod": "block/iron_block",
+  "particle": "block/iron_block"
+ },
+ "elements": [
+  {
+   "from": [
+    7,
+    0,
+    7
+   ],
+   "to": [
+    9,
+    16,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#rod"
+    },
+    "south": {
+     "texture": "#rod"
+    },
+    "east": {
+     "texture": "#rod"
+    },
+    "west": {
+     "texture": "#rod"
+    },
+    "up": {
+     "texture": "#rod"
+    },
+    "down": {
+     "texture": "#rod"
+    }
+   }
+  }
+ ]
+}

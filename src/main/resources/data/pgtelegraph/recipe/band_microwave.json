@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "G": {
+   "item": "minecraft:gold_ingot"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  }
+ },
+ "pattern": [
+  "QGQ",
+  " W "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:band_microwave"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "R": {
+   "item": "pgtelegraph:rocket"
+  },
+  "B": {
+   "item": "minecraft:blaze_rod"
+  }
+ },
+ "pattern": [
+  "R",
+  "R",
+  "B"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:rocket_medium"
+ }
+}

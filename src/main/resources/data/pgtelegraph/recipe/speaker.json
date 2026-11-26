@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "W": {
+   "item": "minecraft:paper"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  }
+ },
+ "pattern": [
+  "PWP",
+  "PCP",
+  "PPP"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:speaker"
+ }
+}

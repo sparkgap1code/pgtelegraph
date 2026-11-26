@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "pattern": [
+  "S",
+  "L",
+  "L"
+ ],
+ "result": {
+  "count": 3,
+  "id": "pgtelegraph:telegraph_pole"
+ }
+}

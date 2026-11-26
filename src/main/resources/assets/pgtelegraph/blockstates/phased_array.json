@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/phased_array"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/phased_array",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/phased_array",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/phased_array",
+   "y": 270
+  }
+ }
+}

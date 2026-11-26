@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "R": {
+   "item": "pgtelegraph:antenna_rod"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "pattern": [
+  "RRR",
+  " E ",
+  " S "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:direction_finder"
+ }
+}

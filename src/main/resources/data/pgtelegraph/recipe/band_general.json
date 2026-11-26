@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "A": {
+   "item": "pgtelegraph:band_lf_mf"
+  },
+  "B": {
+   "item": "pgtelegraph:band_hf"
+  },
+  "C": {
+   "item": "pgtelegraph:band_vhf_uhf"
+  },
+  "D": {
+   "item": "pgtelegraph:band_microwave"
+  }
+ },
+ "pattern": [
+  "ABC",
+  " D "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:band_general"
+ }
+}

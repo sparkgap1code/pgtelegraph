@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "pattern": [
+  "W",
+  "S"
+ ],
+ "result": {
+  "count": 4,
+  "id": "pgtelegraph:wooden_peg"
+ }
+}

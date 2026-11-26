@@ -1,0 +1,37 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "pgtelegraph:battery_pack_lifepo4",
+     "functions": [
+      {
+       "function": "minecraft:copy_custom_data",
+       "source": "block_entity",
+       "ops": [
+        {
+         "source": "Soc",
+         "target": "Soc",
+         "op": "replace"
+        },
+        {
+         "source": "Health",
+         "target": "Health",
+         "op": "replace"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:survives_explosion"
+    }
+   ]
+  }
+ ]
+}

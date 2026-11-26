@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "A": {
+   "item": "pgtelegraph:vhf_whip"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "T": {
+   "item": "pgtelegraph:transmitter"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "R": {
+   "item": "pgtelegraph:receiver"
+  }
+ },
+ "pattern": [
+  " A ",
+  "ETE",
+  "IRI"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:handheld_radio"
+ }
+}

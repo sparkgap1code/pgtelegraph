@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "P": {
+   "item": "minecraft:white_terracotta"
+  },
+  "L": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "pattern": [
+  "WWW",
+  "WPW",
+  "LLL"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:loading_coil"
+ }
+}

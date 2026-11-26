@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "B": {
+   "item": "minecraft:black_concrete"
+  }
+ },
+ "pattern": [
+  " I ",
+  "WIW",
+  "BBB"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:short_antenna"
+ }
+}

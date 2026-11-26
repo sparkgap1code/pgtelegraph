@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "C": {
+   "item": "minecraft:clay_ball"
+  }
+ },
+ "pattern": [
+  "WCW"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:filter_ceramic_2k4"
+ }
+}

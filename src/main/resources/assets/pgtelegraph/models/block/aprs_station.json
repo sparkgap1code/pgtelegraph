@@ -1,0 +1,211 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "case": "block/gray_concrete",
+  "lcd": "block/lime_concrete",
+  "pad": "block/black_concrete",
+  "red": "block/red_concrete",
+  "black": "block/black_concrete",
+  "particle": "block/gray_concrete"
+ },
+ "elements": [
+  {
+   "name": "case",
+   "from": [
+    2,
+    0,
+    3
+   ],
+   "to": [
+    14,
+    6,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#case"
+    },
+    "south": {
+     "texture": "#case"
+    },
+    "east": {
+     "texture": "#case"
+    },
+    "west": {
+     "texture": "#case"
+    },
+    "up": {
+     "texture": "#case"
+    },
+    "down": {
+     "texture": "#case"
+    }
+   }
+  },
+  {
+   "name": "lcd",
+   "from": [
+    4,
+    2,
+    2.8
+   ],
+   "to": [
+    12,
+    5,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#lcd"
+    },
+    "south": {
+     "texture": "#lcd"
+    },
+    "east": {
+     "texture": "#lcd"
+    },
+    "west": {
+     "texture": "#lcd"
+    },
+    "up": {
+     "texture": "#lcd"
+    },
+    "down": {
+     "texture": "#lcd"
+    }
+   }
+  },
+  {
+   "name": "pad0",
+   "from": [
+    3.5,
+    6,
+    4
+   ],
+   "to": [
+    7.5,
+    6.2,
+    8
+   ],
+   "faces": {
+    "north": {
+     "texture": "#pad"
+    },
+    "south": {
+     "texture": "#pad"
+    },
+    "east": {
+     "texture": "#pad"
+    },
+    "west": {
+     "texture": "#pad"
+    },
+    "up": {
+     "texture": "#pad"
+    },
+    "down": {
+     "texture": "#pad"
+    }
+   }
+  },
+  {
+   "name": "pad1",
+   "from": [
+    8.5,
+    6,
+    4
+   ],
+   "to": [
+    12.5,
+    6.2,
+    8
+   ],
+   "faces": {
+    "north": {
+     "texture": "#pad"
+    },
+    "south": {
+     "texture": "#pad"
+    },
+    "east": {
+     "texture": "#pad"
+    },
+    "west": {
+     "texture": "#pad"
+    },
+    "up": {
+     "texture": "#pad"
+    },
+    "down": {
+     "texture": "#pad"
+    }
+   }
+  },
+  {
+   "name": "pwr+",
+   "from": [
+    10.5,
+    6,
+    10.5
+   ],
+   "to": [
+    13.5,
+    8,
+    13.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#red"
+    },
+    "south": {
+     "texture": "#red"
+    },
+    "east": {
+     "texture": "#red"
+    },
+    "west": {
+     "texture": "#red"
+    },
+    "up": {
+     "texture": "#red"
+    },
+    "down": {
+     "texture": "#red"
+    }
+   }
+  },
+  {
+   "name": "pwr-",
+   "from": [
+    2.5,
+    6,
+    10.5
+   ],
+   "to": [
+    5.5,
+    8,
+    13.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#black"
+    },
+    "south": {
+     "texture": "#black"
+    },
+    "east": {
+     "texture": "#black"
+    },
+    "west": {
+     "texture": "#black"
+    },
+    "up": {
+     "texture": "#black"
+    },
+    "down": {
+     "texture": "#black"
+    }
+   }
+  }
+ ]
+}

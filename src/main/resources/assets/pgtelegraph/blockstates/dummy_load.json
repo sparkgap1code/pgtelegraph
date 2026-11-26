@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "burnt=false": {
+   "model": "pgtelegraph:block/dummy_load"
+  },
+  "burnt=true": {
+   "model": "pgtelegraph:block/dummy_load_burnt"
+  }
+ }
+}

@@ -1,0 +1,311 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "case": "block/green_terracotta",
+  "metal": "block/iron_block",
+  "knob": "block/black_concrete",
+  "handset": "block/black_concrete",
+  "red": "block/red_concrete",
+  "black": "block/black_concrete",
+  "particle": "block/green_terracotta"
+ },
+ "elements": [
+  {
+   "name": "case",
+   "from": [
+    3,
+    0,
+    4
+   ],
+   "to": [
+    13,
+    6,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#case"
+    },
+    "south": {
+     "texture": "#case"
+    },
+    "east": {
+     "texture": "#case"
+    },
+    "west": {
+     "texture": "#case"
+    },
+    "up": {
+     "texture": "#case"
+    },
+    "down": {
+     "texture": "#case"
+    }
+   }
+  },
+  {
+   "name": "crank_axle",
+   "from": [
+    13,
+    3,
+    7.5
+   ],
+   "to": [
+    14,
+    4,
+    8.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "name": "crank_arm",
+   "from": [
+    14,
+    1,
+    7.5
+   ],
+   "to": [
+    14.6,
+    4,
+    8.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "name": "crank_knob",
+   "from": [
+    14.6,
+    1,
+    7.5
+   ],
+   "to": [
+    15.6,
+    2,
+    8.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#knob"
+    },
+    "south": {
+     "texture": "#knob"
+    },
+    "east": {
+     "texture": "#knob"
+    },
+    "west": {
+     "texture": "#knob"
+    },
+    "up": {
+     "texture": "#knob"
+    },
+    "down": {
+     "texture": "#knob"
+    }
+   }
+  },
+  {
+   "name": "L1",
+   "from": [
+    3.5,
+    6,
+    10
+   ],
+   "to": [
+    6.5,
+    7.5,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#red"
+    },
+    "south": {
+     "texture": "#red"
+    },
+    "east": {
+     "texture": "#red"
+    },
+    "west": {
+     "texture": "#red"
+    },
+    "up": {
+     "texture": "#red"
+    },
+    "down": {
+     "texture": "#red"
+    }
+   }
+  },
+  {
+   "name": "L2",
+   "from": [
+    9.5,
+    6,
+    10
+   ],
+   "to": [
+    12.5,
+    7.5,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#black"
+    },
+    "south": {
+     "texture": "#black"
+    },
+    "east": {
+     "texture": "#black"
+    },
+    "west": {
+     "texture": "#black"
+    },
+    "up": {
+     "texture": "#black"
+    },
+    "down": {
+     "texture": "#black"
+    }
+   }
+  },
+  {
+   "name": "handset",
+   "from": [
+    4,
+    6,
+    5
+   ],
+   "to": [
+    12,
+    7.5,
+    7.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#handset"
+    },
+    "south": {
+     "texture": "#handset"
+    },
+    "east": {
+     "texture": "#handset"
+    },
+    "west": {
+     "texture": "#handset"
+    },
+    "up": {
+     "texture": "#handset"
+    },
+    "down": {
+     "texture": "#handset"
+    }
+   }
+  },
+  {
+   "name": "ear",
+   "from": [
+    4,
+    6,
+    4.5
+   ],
+   "to": [
+    5.5,
+    8,
+    8
+   ],
+   "faces": {
+    "north": {
+     "texture": "#handset"
+    },
+    "south": {
+     "texture": "#handset"
+    },
+    "east": {
+     "texture": "#handset"
+    },
+    "west": {
+     "texture": "#handset"
+    },
+    "up": {
+     "texture": "#handset"
+    },
+    "down": {
+     "texture": "#handset"
+    }
+   }
+  },
+  {
+   "name": "mouth",
+   "from": [
+    10.5,
+    6,
+    4.5
+   ],
+   "to": [
+    12,
+    8,
+    8
+   ],
+   "faces": {
+    "north": {
+     "texture": "#handset"
+    },
+    "south": {
+     "texture": "#handset"
+    },
+    "east": {
+     "texture": "#handset"
+    },
+    "west": {
+     "texture": "#handset"
+    },
+    "up": {
+     "texture": "#handset"
+    },
+    "down": {
+     "texture": "#handset"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "sounder_down": {
+  "sounds": [
+   "pgtelegraph:sounder_down"
+  ],
+  "subtitle": "pgtelegraph.subtitle.sounder"
+ },
+ "sounder_up": {
+  "sounds": [
+   "pgtelegraph:sounder_up"
+  ],
+  "subtitle": "pgtelegraph.subtitle.sounder"
+ },
+ "relay_click": {
+  "sounds": [
+   "pgtelegraph:relay_click"
+  ],
+  "subtitle": "pgtelegraph.subtitle.relay"
+ },
+ "buzzer_tone": {
+  "sounds": [
+   "pgtelegraph:buzzer_tone"
+  ],
+  "subtitle": "pgtelegraph.subtitle.buzzer"
+ },
+ "radio_noise": {
+  "sounds": [
+   "pgtelegraph:radio_noise"
+  ],
+  "subtitle": "pgtelegraph.subtitle.radio_noise"
+ },
+ "broadcast_stream": {
+  "sounds": [
+   {
+    "name": "pgtelegraph:radio_noise",
+    "stream": true
+   }
+  ],
+  "subtitle": "pgtelegraph.subtitle.broadcast"
+ }
+}

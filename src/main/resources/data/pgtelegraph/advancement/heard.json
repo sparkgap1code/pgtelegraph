@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:receiver"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.heard"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.heard.desc"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:root",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

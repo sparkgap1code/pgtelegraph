@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "N": {
+      "item": "minecraft:black_dye"
+    },
+    "B": {
+      "tag": "c:ingots/brass"
+    },
+    "W": {
+      "tag": "c:wires/copper"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    " N ",
+    "BBW",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pgtelegraph:telegraph_key"
+  }
+}

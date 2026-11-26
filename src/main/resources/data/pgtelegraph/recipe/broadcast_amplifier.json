@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "A": {
+   "item": "pgtelegraph:linear_amplifier"
+  },
+  "G": {
+   "item": "minecraft:glass"
+  },
+  "H": {
+   "tag": "c:storage_blocks/copper"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "AGA",
+  "AHA",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:broadcast_amplifier"
+ }
+}

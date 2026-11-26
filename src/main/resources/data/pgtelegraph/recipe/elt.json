@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "O": {
+   "item": "minecraft:orange_dye"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  }
+ },
+ "pattern": [
+  "  W",
+  "ORO",
+  "OEO"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:elt"
+ }
+}

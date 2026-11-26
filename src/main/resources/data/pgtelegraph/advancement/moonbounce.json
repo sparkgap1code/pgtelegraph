@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:dish_antenna"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.moonbounce"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.moonbounce.desc"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:dx500",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

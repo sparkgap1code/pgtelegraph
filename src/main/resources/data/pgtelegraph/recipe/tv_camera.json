@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "P": {
+   "item": "create:precision_mechanism"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  }
+ },
+ "pattern": [
+  "III",
+  "GPE",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:tv_camera"
+ }
+}

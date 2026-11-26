@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "K": {
+   "item": "minecraft:black_dye"
+  },
+  "H": {
+   "item": "minecraft:iron_nugget"
+  },
+  "B": {
+   "item": "minecraft:bell"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "L": {
+   "item": "minecraft:leather"
+  }
+ },
+ "pattern": [
+  "KHK",
+  "BCB",
+  "LLL"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:field_phone"
+ }
+}

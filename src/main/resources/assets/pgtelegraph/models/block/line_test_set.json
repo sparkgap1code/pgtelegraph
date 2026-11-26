@@ -1,0 +1,178 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "case": "block/black_concrete",
+  "dial": "block/white_concrete",
+  "knob": "block/gray_concrete",
+  "red": "block/red_concrete",
+  "black": "block/black_concrete",
+  "particle": "block/black_concrete"
+ },
+ "elements": [
+  {
+   "name": "case",
+   "from": [
+    3,
+    0,
+    3
+   ],
+   "to": [
+    13,
+    6,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#case"
+    },
+    "south": {
+     "texture": "#case"
+    },
+    "east": {
+     "texture": "#case"
+    },
+    "west": {
+     "texture": "#case"
+    },
+    "up": {
+     "texture": "#case"
+    },
+    "down": {
+     "texture": "#case"
+    }
+   }
+  },
+  {
+   "name": "dial",
+   "from": [
+    4.5,
+    2,
+    2.8
+   ],
+   "to": [
+    11.5,
+    5.2,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#dial"
+    },
+    "south": {
+     "texture": "#dial"
+    },
+    "east": {
+     "texture": "#dial"
+    },
+    "west": {
+     "texture": "#dial"
+    },
+    "up": {
+     "texture": "#dial"
+    },
+    "down": {
+     "texture": "#dial"
+    }
+   }
+  },
+  {
+   "name": "knob",
+   "from": [
+    7,
+    0.5,
+    2.6
+   ],
+   "to": [
+    9,
+    1.7,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#knob"
+    },
+    "south": {
+     "texture": "#knob"
+    },
+    "east": {
+     "texture": "#knob"
+    },
+    "west": {
+     "texture": "#knob"
+    },
+    "up": {
+     "texture": "#knob"
+    },
+    "down": {
+     "texture": "#knob"
+    }
+   }
+  },
+  {
+   "name": "line",
+   "from": [
+    4,
+    6,
+    9.5
+   ],
+   "to": [
+    7,
+    7.5,
+    12.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#red"
+    },
+    "south": {
+     "texture": "#red"
+    },
+    "east": {
+     "texture": "#red"
+    },
+    "west": {
+     "texture": "#red"
+    },
+    "up": {
+     "texture": "#red"
+    },
+    "down": {
+     "texture": "#red"
+    }
+   }
+  },
+  {
+   "name": "earth",
+   "from": [
+    9,
+    6,
+    9.5
+   ],
+   "to": [
+    12,
+    7.5,
+    12.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#knob"
+    },
+    "south": {
+     "texture": "#knob"
+    },
+    "east": {
+     "texture": "#knob"
+    },
+    "west": {
+     "texture": "#knob"
+    },
+    "up": {
+     "texture": "#knob"
+    },
+    "down": {
+     "texture": "#knob"
+    }
+   }
+  }
+ ]
+}

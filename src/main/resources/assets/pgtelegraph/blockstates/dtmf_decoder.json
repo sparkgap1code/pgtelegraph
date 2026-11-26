@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/dtmf_decoder"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/dtmf_decoder",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/dtmf_decoder",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/dtmf_decoder",
+   "y": 270
+  }
+ }
+}

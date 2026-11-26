@@ -1,0 +1,1 @@
+{"variants": {"facing=north": {"model": "pgtelegraph:block/power_supply"}, "facing=east": {"model": "pgtelegraph:block/power_supply", "y": 90}, "facing=south": {"model": "pgtelegraph:block/power_supply", "y": 180}, "facing=west": {"model": "pgtelegraph:block/power_supply", "y": 270}}}

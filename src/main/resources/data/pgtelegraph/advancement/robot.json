@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:qso_robot"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.robot"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.robot.desc"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:heard",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

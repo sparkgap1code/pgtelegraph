@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:rocket"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.orbit"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.orbit.desc"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:root",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

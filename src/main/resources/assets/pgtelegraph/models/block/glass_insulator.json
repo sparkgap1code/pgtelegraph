@@ -1,0 +1,140 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "glass": "block/light_blue_stained_glass",
+  "pin": "block/oak_planks",
+  "copper": "block/copper_block",
+  "particle": "block/light_blue_stained_glass"
+ },
+ "elements": [
+  {
+   "from": [
+    7,
+    0,
+    7
+   ],
+   "to": [
+    9,
+    2,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#pin"
+    },
+    "south": {
+     "texture": "#pin"
+    },
+    "east": {
+     "texture": "#pin"
+    },
+    "west": {
+     "texture": "#pin"
+    },
+    "up": {
+     "texture": "#pin"
+    },
+    "down": {
+     "texture": "#pin"
+    }
+   }
+  },
+  {
+   "from": [
+    5.5,
+    2,
+    5.5
+   ],
+   "to": [
+    10.5,
+    5,
+    10.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#glass"
+    },
+    "south": {
+     "texture": "#glass"
+    },
+    "east": {
+     "texture": "#glass"
+    },
+    "west": {
+     "texture": "#glass"
+    },
+    "up": {
+     "texture": "#glass"
+    },
+    "down": {
+     "texture": "#glass"
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    5,
+    6.5
+   ],
+   "to": [
+    9.5,
+    6,
+    9.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#glass"
+    },
+    "south": {
+     "texture": "#glass"
+    },
+    "east": {
+     "texture": "#glass"
+    },
+    "west": {
+     "texture": "#glass"
+    },
+    "up": {
+     "texture": "#glass"
+    },
+    "down": {
+     "texture": "#glass"
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    6,
+    6.5
+   ],
+   "to": [
+    9.5,
+    8,
+    9.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#copper"
+    },
+    "south": {
+     "texture": "#copper"
+    },
+    "east": {
+     "texture": "#copper"
+    },
+    "west": {
+     "texture": "#copper"
+    },
+    "up": {
+     "texture": "#copper"
+    },
+    "down": {
+     "texture": "#copper"
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:translucent"
+}

@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "G": {
+   "item": "minecraft:gunpowder"
+  },
+  "B": {
+   "item": "minecraft:blaze_powder"
+  }
+ },
+ "pattern": [
+  " I ",
+  "IGI",
+  "BGB"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:rocket"
+ }
+}

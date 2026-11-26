@@ -1,0 +1,60 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "case": "block/black_concrete",
+  "front": "block/gray_concrete",
+  "slot": "block/black_wool",
+  "particle": "block/black_concrete"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    2
+   ],
+   "to": [
+    15,
+    5,
+    14
+   ],
+   "faces": {
+    "south": {
+     "texture": "#case"
+    },
+    "east": {
+     "texture": "#case"
+    },
+    "west": {
+     "texture": "#case"
+    },
+    "up": {
+     "texture": "#case"
+    },
+    "down": {
+     "texture": "#case"
+    },
+    "north": {
+     "texture": "#front"
+    }
+   }
+  },
+  {
+   "from": [
+    4,
+    2,
+    1.9
+   ],
+   "to": [
+    12,
+    3.5,
+    2
+   ],
+   "faces": {
+    "north": {
+     "texture": "#slot"
+    }
+   }
+  }
+ ]
+}

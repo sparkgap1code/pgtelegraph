@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "H": {
+   "item": "pgtelegraph:handheld_radio"
+  },
+  "L": {
+   "tag": "c:leathers"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "R": {
+   "tag": "c:rods/iron"
+  }
+ },
+ "pattern": [
+  "  R",
+  "IHI",
+  "LIL"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:manpack_radio"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  }
+ },
+ "pattern": [
+  "WEW",
+  "QRQ"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:bms"
+ }
+}

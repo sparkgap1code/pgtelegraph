@@ -1,0 +1,124 @@
+{
+ "variants": {
+  "dah=false,dit=false,facing=north,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle"
+  },
+  "dah=false,dit=false,facing=north,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_on"
+  },
+  "dah=true,dit=false,facing=north,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dah"
+  },
+  "dah=true,dit=false,facing=north,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dah_on"
+  },
+  "dah=false,dit=true,facing=north,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dit"
+  },
+  "dah=false,dit=true,facing=north,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_on"
+  },
+  "dah=true,dit=true,facing=north,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_dah"
+  },
+  "dah=true,dit=true,facing=north,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_dah_on"
+  },
+  "dah=false,dit=false,facing=east,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle",
+   "y": 90
+  },
+  "dah=false,dit=false,facing=east,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_on",
+   "y": 90
+  },
+  "dah=true,dit=false,facing=east,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dah",
+   "y": 90
+  },
+  "dah=true,dit=false,facing=east,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dah_on",
+   "y": 90
+  },
+  "dah=false,dit=true,facing=east,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dit",
+   "y": 90
+  },
+  "dah=false,dit=true,facing=east,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_on",
+   "y": 90
+  },
+  "dah=true,dit=true,facing=east,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_dah",
+   "y": 90
+  },
+  "dah=true,dit=true,facing=east,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_dah_on",
+   "y": 90
+  },
+  "dah=false,dit=false,facing=south,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle",
+   "y": 180
+  },
+  "dah=false,dit=false,facing=south,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_on",
+   "y": 180
+  },
+  "dah=true,dit=false,facing=south,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dah",
+   "y": 180
+  },
+  "dah=true,dit=false,facing=south,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dah_on",
+   "y": 180
+  },
+  "dah=false,dit=true,facing=south,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dit",
+   "y": 180
+  },
+  "dah=false,dit=true,facing=south,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_on",
+   "y": 180
+  },
+  "dah=true,dit=true,facing=south,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_dah",
+   "y": 180
+  },
+  "dah=true,dit=true,facing=south,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_dah_on",
+   "y": 180
+  },
+  "dah=false,dit=false,facing=west,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle",
+   "y": 270
+  },
+  "dah=false,dit=false,facing=west,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_on",
+   "y": 270
+  },
+  "dah=true,dit=false,facing=west,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dah",
+   "y": 270
+  },
+  "dah=true,dit=false,facing=west,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dah_on",
+   "y": 270
+  },
+  "dah=false,dit=true,facing=west,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dit",
+   "y": 270
+  },
+  "dah=false,dit=true,facing=west,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_on",
+   "y": 270
+  },
+  "dah=true,dit=true,facing=west,keyed=false": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_dah",
+   "y": 270
+  },
+  "dah=true,dit=true,facing=west,keyed=true": {
+   "model": "pgtelegraph:block/keyer_paddle_dit_dah_on",
+   "y": 270
+  }
+ }
+}

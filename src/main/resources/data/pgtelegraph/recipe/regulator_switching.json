@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "WEW",
+  "CIC"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:regulator_switching"
+ }
+}

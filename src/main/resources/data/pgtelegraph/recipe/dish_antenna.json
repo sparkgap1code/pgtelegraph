@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "B": {
+   "tag": "c:ingots/brass"
+  }
+ },
+ "pattern": [
+  "III",
+  "IWI",
+  " B "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:dish_antenna"
+ }
+}

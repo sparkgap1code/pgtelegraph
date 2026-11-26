@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "G": {
+   "item": "minecraft:glass"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  },
+  "B": {
+   "tag": "c:ingots/brass"
+  }
+ },
+ "pattern": [
+  "BGB",
+  "ECE",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:linear_amplifier"
+ }
+}

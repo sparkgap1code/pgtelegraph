@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "R": {
+   "item": "pgtelegraph:antenna_rod"
+  },
+  "T": {
+   "item": "pgtelegraph:transmitter"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  }
+ },
+ "pattern": [
+  "R",
+  "T",
+  "Q"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:beacon"
+ }
+}

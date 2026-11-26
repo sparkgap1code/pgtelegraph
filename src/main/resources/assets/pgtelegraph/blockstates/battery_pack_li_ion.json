@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/battery_pack_li_ion"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/battery_pack_li_ion",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/battery_pack_li_ion",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/battery_pack_li_ion",
+   "y": 270
+  }
+ }
+}

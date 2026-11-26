@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "W": {
+   "item": "pgtelegraph:coax_thin"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "N": {
+   "tag": "c:ingots/copper"
+  }
+ },
+ "pattern": [
+  "NCQ",
+  "WPW",
+  "PPP"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:manual_tuner"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "C": {
+   "item": "minecraft:copper_block"
+  },
+  "H": {
+   "item": "pgtelegraph:coax_heavy"
+  },
+  "N": {
+   "tag": "c:nuggets/iron"
+  }
+ },
+ "pattern": [
+  "NCN",
+  "CHC",
+  "NCN"
+ ],
+ "result": {
+  "count": 4,
+  "id": "pgtelegraph:coax_rigid"
+ }
+}

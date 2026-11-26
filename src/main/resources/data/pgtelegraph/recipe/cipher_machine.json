@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "C": {
+   "item": "create:cogwheel"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "M": {
+   "item": "create:precision_mechanism"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "CCC",
+  "PMP",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:cipher_machine"
+ }
+}

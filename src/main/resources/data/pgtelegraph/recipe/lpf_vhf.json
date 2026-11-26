@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "N": {
+   "tag": "c:nuggets/iron"
+  }
+ },
+ "pattern": [
+  "WQW",
+  " N "
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:lpf_vhf"
+ }
+}

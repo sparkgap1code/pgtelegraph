@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/helical_whip"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/helical_whip",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/helical_whip",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/helical_whip",
+   "y": 270
+  }
+ }
+}

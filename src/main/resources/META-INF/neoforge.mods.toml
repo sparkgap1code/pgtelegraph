@@ -1,0 +1,42 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "GPL-3.0-or-later"
+issueTrackerURL = "https://github.com/sparkgap1code/pgtelegraph/issues"
+
+[[mods]]
+modId = "pgtelegraph"
+version = "${file.jarVersion}"
+displayName = "Power Grid Telegraph"
+authors = "sparkgap1code"
+displayURL = "https://github.com/sparkgap1code/pgtelegraph"
+description = '''
+Telegraphy, radio, TV and satellites that run on real Create: Power Grid circuits.
+'''
+
+[[dependencies.pgtelegraph]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.pgtelegraph]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.pgtelegraph]]
+modId = "powergrid"
+type = "required"
+versionRange = "[0.6.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.pgtelegraph]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.9,6.1.0)"
+ordering = "AFTER"
+side = "BOTH"

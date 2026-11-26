@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/sstv_monitor"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/sstv_monitor",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/sstv_monitor",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/sstv_monitor",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "redstone",
+ "ingredients": [
+  {
+   "item": "powergrid:insulated_copper_wire"
+  },
+  {
+   "item": "powergrid:insulated_copper_wire"
+  },
+  {
+   "item": "powergrid:insulated_copper_wire"
+  },
+  {
+   "item": "powergrid:insulated_copper_wire"
+  },
+  {
+   "item": "minecraft:iron_nugget"
+  },
+  {
+   "item": "minecraft:iron_nugget"
+  }
+ ],
+ "result": {
+  "count": 4,
+  "id": "pgtelegraph:patch_cord"
+ }
+}

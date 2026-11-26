@@ -1,0 +1,117 @@
+{
+ "multipart": [
+  {
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_dot"
+   },
+   "when": {
+    "wall": "none"
+   }
+  },
+  {
+   "when": {
+    "north": "side|up"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_side"
+   }
+  },
+  {
+   "when": {
+    "north": "up"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_up"
+   }
+  },
+  {
+   "when": {
+    "east": "side|up"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_side",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "east": "up"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_up",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "south": "side|up"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_side",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "south": "up"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_up",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "west": "side|up"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_side",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "west": "up"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_up",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "wall": "north"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_wall"
+   }
+  },
+  {
+   "when": {
+    "wall": "east"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_wall",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "wall": "south"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_wall",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "wall": "west"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/coax_thin_wall",
+    "y": 270
+   }
+  }
+ ]
+}

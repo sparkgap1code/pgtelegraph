@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  }
+ },
+ "pattern": [
+  "QCQ"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:band_hf"
+ }
+}

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,keyed=false": {
+      "model": "pgtelegraph:block/keyer"
+    },
+    "facing=north,keyed=true": {
+      "model": "pgtelegraph:block/keyer_on"
+    },
+    "facing=east,keyed=false": {
+      "model": "pgtelegraph:block/keyer",
+      "y": 90
+    },
+    "facing=east,keyed=true": {
+      "model": "pgtelegraph:block/keyer_on",
+      "y": 90
+    },
+    "facing=south,keyed=false": {
+      "model": "pgtelegraph:block/keyer",
+      "y": 180
+    },
+    "facing=south,keyed=true": {
+      "model": "pgtelegraph:block/keyer_on",
+      "y": 180
+    },
+    "facing=west,keyed=false": {
+      "model": "pgtelegraph:block/keyer",
+      "y": 270
+    },
+    "facing=west,keyed=true": {
+      "model": "pgtelegraph:block/keyer_on",
+      "y": 270
+    }
+  }
+}

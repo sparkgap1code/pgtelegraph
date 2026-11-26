@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/oscilloscope"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/oscilloscope",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/oscilloscope",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/oscilloscope",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "facing": "north"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/equipment_rack_posts"
+   }
+  },
+  {
+   "when": {
+    "facing": "east"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/equipment_rack_posts",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "facing": "south"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/equipment_rack_posts",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "facing": "west"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/equipment_rack_posts",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "up": "false"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/equipment_rack_top"
+   }
+  },
+  {
+   "when": {
+    "down": "false"
+   },
+   "apply": {
+    "model": "pgtelegraph:block/equipment_rack_bottom"
+   }
+  }
+ ]
+}

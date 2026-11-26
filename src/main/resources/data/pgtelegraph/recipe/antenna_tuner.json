@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "W": {
+   "item": "pgtelegraph:coax_thin"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "ECE",
+  "WQW",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:antenna_tuner"
+ }
+}

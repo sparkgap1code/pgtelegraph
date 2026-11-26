@@ -1,0 +1,202 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "case": "block/dark_oak_planks",
+  "grille": "block/brown_wool",
+  "dial": "block/orange_concrete",
+  "knob": "block/gold_block",
+  "particle": "block/dark_oak_planks",
+  "tpos": "block/red_concrete",
+  "tneg": "block/black_concrete"
+ },
+ "elements": [
+  {
+   "from": [
+    3,
+    0,
+    5
+   ],
+   "to": [
+    13,
+    8,
+    11
+   ],
+   "faces": {
+    "north": {
+     "texture": "#case"
+    },
+    "south": {
+     "texture": "#case"
+    },
+    "east": {
+     "texture": "#case"
+    },
+    "west": {
+     "texture": "#case"
+    },
+    "up": {
+     "texture": "#case"
+    },
+    "down": {
+     "texture": "#case"
+    }
+   }
+  },
+  {
+   "from": [
+    4,
+    3,
+    4.6
+   ],
+   "to": [
+    9,
+    7,
+    5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#grille"
+    },
+    "south": {
+     "texture": "#grille"
+    },
+    "east": {
+     "texture": "#grille"
+    },
+    "west": {
+     "texture": "#grille"
+    },
+    "up": {
+     "texture": "#grille"
+    },
+    "down": {
+     "texture": "#grille"
+    }
+   }
+  },
+  {
+   "from": [
+    10,
+    5,
+    4.6
+   ],
+   "to": [
+    12,
+    7,
+    5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#dial"
+    },
+    "south": {
+     "texture": "#dial"
+    },
+    "east": {
+     "texture": "#dial"
+    },
+    "west": {
+     "texture": "#dial"
+    },
+    "up": {
+     "texture": "#dial"
+    },
+    "down": {
+     "texture": "#dial"
+    }
+   }
+  },
+  {
+   "from": [
+    10.5,
+    2,
+    4.4
+   ],
+   "to": [
+    11.5,
+    3,
+    5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#knob"
+    },
+    "south": {
+     "texture": "#knob"
+    },
+    "east": {
+     "texture": "#knob"
+    },
+    "west": {
+     "texture": "#knob"
+    },
+    "up": {
+     "texture": "#knob"
+    },
+    "down": {
+     "texture": "#knob"
+    }
+   }
+  },
+  {
+   "name": "pwr+",
+   "from": [
+    10,
+    8,
+    8
+   ],
+   "to": [
+    12,
+    9.5,
+    10
+   ],
+   "faces": {
+    "north": {
+     "texture": "#tpos"
+    },
+    "south": {
+     "texture": "#tpos"
+    },
+    "east": {
+     "texture": "#tpos"
+    },
+    "west": {
+     "texture": "#tpos"
+    },
+    "up": {
+     "texture": "#tpos"
+    }
+   }
+  },
+  {
+   "name": "pwr-",
+   "from": [
+    4,
+    8,
+    8
+   ],
+   "to": [
+    6,
+    9.5,
+    10
+   ],
+   "faces": {
+    "north": {
+     "texture": "#tneg"
+    },
+    "south": {
+     "texture": "#tneg"
+    },
+    "east": {
+     "texture": "#tneg"
+    },
+    "west": {
+     "texture": "#tneg"
+    },
+    "up": {
+     "texture": "#tneg"
+    }
+   }
+  }
+ ]
+}

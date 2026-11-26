@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:qsl_card"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.qsl10"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.qsl10.desc"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:heard",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

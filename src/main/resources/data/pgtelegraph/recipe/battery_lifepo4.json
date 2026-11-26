@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "N": {
+   "tag": "c:nuggets/iron"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "I": {
+   "item": "minecraft:iron_nugget"
+  }
+ },
+ "pattern": [
+  "NRN",
+  "RIR",
+  "NRN"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:battery_lifepo4"
+ }
+}

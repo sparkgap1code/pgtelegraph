@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "M": {
+   "item": "create:shaft"
+  },
+  "S": {
+   "item": "minecraft:iron_ingot"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  }
+ },
+ "pattern": [
+  "MSM",
+  "PEP"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:tape_recorder"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/audio_amplifier"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/audio_amplifier",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/audio_amplifier",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/audio_amplifier",
+   "y": 270
+  }
+ }
+}

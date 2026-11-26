@@ -1,0 +1,7 @@
+{
+ "variants": {
+  "": {
+   "model": "pgtelegraph:block/rotator"
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "GGE",
+  "GGW",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:oscilloscope"
+ }
+}

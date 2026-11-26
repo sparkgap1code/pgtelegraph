@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/switchboard"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/switchboard",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/switchboard",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/switchboard",
+   "y": 270
+  }
+ }
+}

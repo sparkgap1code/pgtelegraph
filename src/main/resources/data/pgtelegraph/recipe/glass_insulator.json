@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "G": {
+   "item": "minecraft:glass_pane"
+  }
+ },
+ "pattern": [
+  " W ",
+  "GGG"
+ ],
+ "result": {
+  "count": 4,
+  "id": "pgtelegraph:glass_insulator"
+ }
+}

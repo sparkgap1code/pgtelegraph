@@ -1,0 +1,243 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "wood": "block/oak_planks",
+  "metal": "block/iron_block",
+  "bat": "block/black_concrete",
+  "brass": "create:block/brass_block",
+  "particle": "block/oak_planks"
+ },
+ "elements": [
+  {
+   "name": "board",
+   "from": [
+    1,
+    0,
+    2
+   ],
+   "to": [
+    15,
+    5,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#wood"
+    },
+    "south": {
+     "texture": "#wood"
+    },
+    "east": {
+     "texture": "#wood"
+    },
+    "west": {
+     "texture": "#wood"
+    },
+    "up": {
+     "texture": "#wood"
+    },
+    "down": {
+     "texture": "#wood"
+    }
+   }
+  },
+  {
+   "name": "relay_w",
+   "from": [
+    2,
+    5,
+    3
+   ],
+   "to": [
+    6,
+    7.5,
+    6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "name": "relay_e",
+   "from": [
+    10,
+    5,
+    3
+   ],
+   "to": [
+    14,
+    7.5,
+    6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal"
+    },
+    "south": {
+     "texture": "#metal"
+    },
+    "east": {
+     "texture": "#metal"
+    },
+    "west": {
+     "texture": "#metal"
+    },
+    "up": {
+     "texture": "#metal"
+    },
+    "down": {
+     "texture": "#metal"
+    }
+   }
+  },
+  {
+   "name": "battery",
+   "from": [
+    6.5,
+    5,
+    3
+   ],
+   "to": [
+    9.5,
+    8,
+    6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#bat"
+    },
+    "south": {
+     "texture": "#bat"
+    },
+    "east": {
+     "texture": "#bat"
+    },
+    "west": {
+     "texture": "#bat"
+    },
+    "up": {
+     "texture": "#bat"
+    },
+    "down": {
+     "texture": "#bat"
+    }
+   }
+  },
+  {
+   "name": "w",
+   "from": [
+    1.5,
+    5,
+    6.5
+   ],
+   "to": [
+    4.5,
+    6.5,
+    9.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    },
+    "down": {
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "name": "e",
+   "from": [
+    11.5,
+    5,
+    6.5
+   ],
+   "to": [
+    14.5,
+    6.5,
+    9.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    },
+    "down": {
+     "texture": "#brass"
+    }
+   }
+  },
+  {
+   "name": "g",
+   "from": [
+    6.5,
+    5,
+    10.5
+   ],
+   "to": [
+    9.5,
+    6.5,
+    13.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#brass"
+    },
+    "south": {
+     "texture": "#brass"
+    },
+    "east": {
+     "texture": "#brass"
+    },
+    "west": {
+     "texture": "#brass"
+    },
+    "up": {
+     "texture": "#brass"
+    },
+    "down": {
+     "texture": "#brass"
+    }
+   }
+  }
+ ]
+}

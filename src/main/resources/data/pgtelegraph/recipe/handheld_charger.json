@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "C": {
+   "item": "powergrid:copper_coil"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "WCW",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:handheld_charger"
+ }
+}

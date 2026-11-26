@@ -1,0 +1,71 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "body": "block/iron_block",
+  "top": "block/coal_block",
+  "particle": "block/iron_block"
+ },
+ "elements": [
+  {
+   "from": [
+    5,
+    0,
+    5
+   ],
+   "to": [
+    11,
+    7,
+    11
+   ],
+   "faces": {
+    "north": {
+     "texture": "#body"
+    },
+    "south": {
+     "texture": "#body"
+    },
+    "east": {
+     "texture": "#body"
+    },
+    "west": {
+     "texture": "#body"
+    },
+    "down": {
+     "texture": "#body"
+    },
+    "up": {
+     "texture": "#top"
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    7,
+    7
+   ],
+   "to": [
+    9,
+    8,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#top"
+    },
+    "south": {
+     "texture": "#top"
+    },
+    "east": {
+     "texture": "#top"
+    },
+    "west": {
+     "texture": "#top"
+    },
+    "up": {
+     "texture": "#top"
+    }
+   }
+  }
+ ]
+}

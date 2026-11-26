@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  },
+  "B": {
+   "tag": "c:ingots/brass"
+  },
+  "L": {
+   "item": "minecraft:leather"
+  }
+ },
+ "pattern": [
+  "BBB",
+  "WLW",
+  "PPP"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:switchboard"
+ }
+}

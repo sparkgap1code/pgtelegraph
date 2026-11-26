@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "K": {
+   "item": "minecraft:dried_kelp"
+  },
+  "W": {
+   "tag": "c:wires/copper"
+  }
+ },
+ "pattern": [
+  "KWK",
+  "KWK"
+ ],
+ "result": {
+  "count": 8,
+  "id": "pgtelegraph:coax_thick"
+ }
+}

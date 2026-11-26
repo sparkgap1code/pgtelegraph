@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:rocket_heavy"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.geostationary"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.geostationary.desc"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:orbit",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

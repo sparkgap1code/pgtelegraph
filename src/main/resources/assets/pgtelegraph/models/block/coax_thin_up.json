@@ -1,0 +1,41 @@
+{
+ "parent": "block/block",
+ "textures": {
+  "c": "block/black_concrete",
+  "particle": "block/black_concrete"
+ },
+ "elements": [
+  {
+   "from": [
+    7.25,
+    0,
+    0
+   ],
+   "to": [
+    8.75,
+    16,
+    0.75
+   ],
+   "faces": {
+    "north": {
+     "texture": "#c"
+    },
+    "south": {
+     "texture": "#c"
+    },
+    "east": {
+     "texture": "#c"
+    },
+    "west": {
+     "texture": "#c"
+    },
+    "up": {
+     "texture": "#c"
+    },
+    "down": {
+     "texture": "#c"
+    }
+   }
+  }
+ ]
+}

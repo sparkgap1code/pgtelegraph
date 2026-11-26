@@ -1,0 +1,22 @@
+{
+ "display": {
+  "icon": {
+   "id": "pgtelegraph:exploded_radio"
+  },
+  "title": {
+   "translate": "advancement.pgtelegraph.boom"
+  },
+  "description": {
+   "translate": "advancement.pgtelegraph.boom.desc"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true
+ },
+ "parent": "pgtelegraph:root",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

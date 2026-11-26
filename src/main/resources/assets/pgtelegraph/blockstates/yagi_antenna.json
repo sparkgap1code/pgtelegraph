@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/yagi_antenna"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/yagi_antenna",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/yagi_antenna",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/yagi_antenna",
+   "y": 270
+  }
+ }
+}

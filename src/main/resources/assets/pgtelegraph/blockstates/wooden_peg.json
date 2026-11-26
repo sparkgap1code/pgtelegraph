@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/wooden_peg"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/wooden_peg",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/wooden_peg",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/wooden_peg",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "pgtelegraph:block/receiver"
+  },
+  "facing=east": {
+   "model": "pgtelegraph:block/receiver",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "pgtelegraph:block/receiver",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "pgtelegraph:block/receiver",
+   "y": 270
+  }
+ }
+}

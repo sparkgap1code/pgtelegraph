@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "redstone",
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  },
+  "W": {
+   "item": "pgtelegraph:coax_thin"
+  },
+  "C": {
+   "item": "minecraft:clock"
+  },
+  "I": {
+   "tag": "c:ingots/iron"
+  }
+ },
+ "pattern": [
+  "GEG",
+  "WCW",
+  "III"
+ ],
+ "result": {
+  "count": 1,
+  "id": "pgtelegraph:ionosonde"
+ }
+}
