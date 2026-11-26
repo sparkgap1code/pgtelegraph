@@ -180,7 +180,7 @@ public class AprsStationBlockEntity extends PoweredStationBlockEntity implements
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         if (!isPowered()) {
             tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.dtmf.no_power")).withStyle(ChatFormatting.RED));
             return true;

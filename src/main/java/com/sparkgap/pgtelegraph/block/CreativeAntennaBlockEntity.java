@@ -38,7 +38,7 @@ public class CreativeAntennaBlockEntity extends SmartBlockEntity implements IHav
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     SWR 1.00:1  2.15 dBi  ").append(Component.translatable("pgtelegraph.creative_antenna.at", (int) heightM()))
                 .withStyle(ChatFormatting.GOLD));
         return true;

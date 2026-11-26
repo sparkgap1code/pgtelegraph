@@ -146,7 +146,7 @@ public class TeleprinterBlockEntity extends RatedBlockEntity implements IHaveGog
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         String t = paper.replace('\n', ' ');
         if (t.length() > 60) t = "..." + t.substring(t.length() - 60);
         tip.add(Component.literal("     " + (t.isEmpty() ? "-" : t)).withStyle(ChatFormatting.AQUA));

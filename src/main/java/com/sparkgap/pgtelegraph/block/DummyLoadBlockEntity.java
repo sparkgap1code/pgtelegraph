@@ -65,7 +65,7 @@ public class DummyLoadBlockEntity extends BlockEntity implements IHaveGoggleInfo
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal(String.format(Locale.ROOT, "     %.1f W", shownW)).withStyle(ChatFormatting.GOLD));
         tip.add(Component.literal(String.format(Locale.ROOT, "     %.0f °C", shownC))
                 .withStyle(shownC > 120 ? ChatFormatting.RED : ChatFormatting.GRAY));

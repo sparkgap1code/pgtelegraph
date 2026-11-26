@@ -204,7 +204,7 @@ public class TvReceiverBlockEntity extends com.sparkgap.pgtelegraph.block.Powere
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     " + RadioBlockEntity.formatFreq(freqHz) + (on ? "" : "  OFF")).withStyle(ChatFormatting.AQUA));
         tip.add(Component.literal("     ").append(tuned
                 ? Component.literal(String.format(Locale.ROOT, "SNR %.0f dB", snr))

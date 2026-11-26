@@ -30,6 +30,8 @@ public class TuneScreen extends Screen {
     private BlockPos pos;
     /** CW / FSK / AM / FM switch, shown for plain radios only (null = no switch) */
     Integer mode;
+    /** the set's label (name tag), or null */
+    String label;
     /** QSO robot operating mode (null = not a robot) */
     Integer robotMode;
     /** CTCSS tone index (null = this set has none) */
@@ -197,7 +199,8 @@ public class TuneScreen extends Screen {
     public void render(GuiGraphics g, int mx, int my, float pt) {
         super.render(g, mx, my, pt);
         int cx = width / 2, y = height / 2 - 50;
-        g.drawCenteredString(font, title, cx, y - 26, 0xFFFFFF);
+        g.drawCenteredString(font, label == null || label.isEmpty() ? title
+                : title.copy().append(Component.literal("  「" + label + "」").withStyle(net.minecraft.ChatFormatting.AQUA)), cx, y - 26, 0xFFFFFF);
         String band = Bands.name(hz);
         g.drawString(font, band == null ? Component.translatable("pgtelegraph.radio.out_of_band") : Component.literal(band),
                 cx + 92, y + 6, band == null ? 0xFF8060 : 0x80FF80);

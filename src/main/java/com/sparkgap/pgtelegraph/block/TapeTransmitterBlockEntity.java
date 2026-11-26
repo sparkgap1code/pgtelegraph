@@ -182,7 +182,7 @@ public class TapeTransmitterBlockEntity extends RatedBlockEntity
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
         float rpm = driveRpm();
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         net.minecraft.ChatFormatting c = rpm > TEAR_RPM ? net.minecraft.ChatFormatting.RED
                 : rpm < STALL_RPM ? net.minecraft.ChatFormatting.YELLOW : net.minecraft.ChatFormatting.GREEN;
         tip.add(Component.literal("    ").append(Component.translatable("pgtelegraph.tape_tx.drive",

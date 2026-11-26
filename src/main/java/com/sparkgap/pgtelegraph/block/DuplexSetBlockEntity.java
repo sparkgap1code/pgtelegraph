@@ -147,7 +147,7 @@ public class DuplexSetBlockEntity extends RatedBlockEntity implements IHaveGoggl
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal(String.format(Locale.ROOT, "     %s  %.1f mA", Component.translatable("pgtelegraph.duplex.coil").getString(), shownCoilMa))
                 .withStyle(pulled ? ChatFormatting.GREEN : ChatFormatting.GRAY));
         if (keyed) tip.add(Component.literal("     ").append(Component.translatable(pulled ? "pgtelegraph.duplex.unbalanced" : "pgtelegraph.duplex.balanced"))

@@ -97,7 +97,7 @@ public class SubmarineCableBlockEntity extends RatedBlockEntity implements IHave
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         double L = lengthKm();
         tip.add(Component.literal(String.format(Locale.ROOT, "     %d km  %.0f Ω  %.0f μF", (int) L, OHMS_PER_KM * L, UF_PER_KM * L))
                 .withStyle(ChatFormatting.GRAY));

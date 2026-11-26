@@ -130,7 +130,7 @@ public class BmsBlockEntity extends RatedBlockEntity implements IHaveGoggleInfor
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal(String.format(Locale.ROOT, "     %.2f V  %.1f A", shownV, shownA)).withStyle(ChatFormatting.GOLD));
         String state = isBurnt() ? "pgtelegraph.bms.shorted" : trip == 0 ? "pgtelegraph.bms.on"
                 : trip == 1 ? "pgtelegraph.bms.uv" : trip == 2 ? "pgtelegraph.bms.ov" : "pgtelegraph.bms.oc";

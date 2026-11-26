@@ -90,6 +90,10 @@ public final class VoiceNet {
                 }
                 if (!level.getBlockState(m.mic).is(PgTelegraph.MICROPHONE.get())) return;
                 for (Direction d : Direction.values()) {
+                    if (level.getBlockEntity(m.mic.relative(d)) instanceof com.sparkgap.pgtelegraph.block.SelectorBlockEntity sel) { // the chosen set
+                        TransmitterBlockEntity t = sel.selectedTransmitter();
+                        if (t != null && t.acceptsVoice()) VoiceAir.speak(level, t.getBlockPos(), m.data);
+                    }
                     if (level.getBlockEntity(m.mic.relative(d)) instanceof TransmitterBlockEntity t && t.acceptsVoice()) {
                         VoiceAir.speak(level, t.getBlockPos(), m.data);
                     }

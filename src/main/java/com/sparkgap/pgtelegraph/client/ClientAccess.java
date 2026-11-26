@@ -57,6 +57,7 @@ public final class ClientAccess {
         Minecraft mc = Minecraft.getInstance();
         if (mc.screen != null) return;
         TuneScreen s = new TuneScreen(pos, hz);
+        if (mc.level != null && mc.level.getBlockEntity(pos) != null) s.label = com.sparkgap.pgtelegraph.block.Labels.get(mc.level.getBlockEntity(pos));
         if (mc.level != null && mc.level.getBlockEntity(pos) instanceof com.sparkgap.pgtelegraph.block.RadioBlockEntity r
                 && (r.getClass() == com.sparkgap.pgtelegraph.block.TransmitterBlockEntity.class
                 || r.getClass() == com.sparkgap.pgtelegraph.block.ReceiverBlockEntity.class || r.creative())) s.mode = r.mode();

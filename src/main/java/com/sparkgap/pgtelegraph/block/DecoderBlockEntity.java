@@ -165,7 +165,7 @@ public class DecoderBlockEntity extends CoilDeviceBlockEntity implements com.sim
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName())
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this))
                 .append(Component.literal(korean ? "  [KO]" : "  [EN]").withStyle(ChatFormatting.GRAY)));
         String t = text.length() > 60 ? "..." + text.substring(text.length() - 60) : text;
         tip.add(Component.literal("     " + (t.isEmpty() ? "-" : t)).withStyle(ChatFormatting.AQUA));

@@ -162,7 +162,7 @@ public class PowerPanelBlockEntity extends RatedBlockEntity implements IHaveGogg
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         if (isBurnt()) {
             tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.panel.burnt")).withStyle(ChatFormatting.RED));
             return true;

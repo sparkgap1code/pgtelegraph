@@ -27,6 +27,7 @@ import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
  *                        (mode: "pulse" | "latch" | "digit")
  * telegraph_power:       getInput() getOutput() getCurrent() isLimiting() isOnBattery() getCharge()  (PSU and UPS)
  * telegraph_aprs:        getReports() -> {{name, x, y, z, age, kind, snr}, ...}  getKey()
+ * telegraph_selector:    getChannel() setChannel(0-4)  (0 = off)
  * telegraph_tunable:     getFrequency() setFrequency(hz) isPowered()  (QSO robot, broadcast radio, TV, SSTV monitor)
  * </pre>
  */
@@ -44,6 +45,7 @@ public final class CcPeripherals {
         e.registerBlockEntity(cap, PgTelegraph.TELEPRINTER_BE.get(), (be, side) -> new Teleprinter(be));
         e.registerBlockEntity(cap, PgTelegraph.DTMF_DECODER_BE.get(), (be, side) -> new DtmfP(be));
         e.registerBlockEntity(cap, PgTelegraph.APRS_STATION_BE.get(), (be, side) -> new AprsP(be));
+        e.registerBlockEntity(cap, PgTelegraph.SELECTOR_BE.get(), (be, side) -> new SelectorP(be));
         e.registerBlockEntity(cap, PgTelegraph.CREATIVE_TRANSMITTER_BE.get(), (be, side) -> new Tx(be));
         e.registerBlockEntity(cap, PgTelegraph.CREATIVE_RECEIVER_BE.get(), (be, side) -> new Rx(be));
         e.registerBlockEntity(cap, PgTelegraph.POWER_SUPPLY_BE.get(), (be, side) -> new Power(be));
@@ -423,6 +425,36 @@ public final class CcPeripherals {
         @LuaFunction(mainThread = true)
         public final String getKey() {
             return be.aprsKey();
+        }
+    }
+
+    public static class SelectorP implements IPeripheral {
+        final com.sparkgap.pgtelegraph.block.SelectorBlockEntity be;
+
+        SelectorP(com.sparkgap.pgtelegraph.block.SelectorBlockEntity be) {
+            this.be = be;
+        }
+
+        @Override
+        public String getType() {
+            return "telegraph_selector";
+        }
+
+        @Override
+        public boolean equals(IPeripheral other) {
+            return other instanceof SelectorP p && p.be == be;
+        }
+
+        @LuaFunction(mainThread = true)
+        public final int getChannel() {
+            return be.channel();
+        }
+
+        @LuaFunction(mainThread = true)
+        public final void setChannel(int ch) throws LuaException {
+            if (ch < 0 || ch > com.sparkgap.pgtelegraph.block.SelectorBlockEntity.OUTS) throw new LuaException("channel 0-4");
+            var lvl = be.getLevel();
+            if (lvl != null) lvl.setBlock(be.getBlockPos(), be.getBlockState().setValue(com.sparkgap.pgtelegraph.block.SelectorBlock.CHANNEL, ch), 3);
         }
     }
 }

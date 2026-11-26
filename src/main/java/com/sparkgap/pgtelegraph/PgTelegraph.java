@@ -696,6 +696,10 @@ public class PgTelegraph {
                     com.sparkgap.pgtelegraph.block.CreativeAntennaBlockEntity.class, () -> PgTelegraph.CREATIVE_ANTENNA_BE.get(), null));
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<com.sparkgap.pgtelegraph.block.CreativeAntennaBlockEntity>> CREATIVE_ANTENNA_BE =
             be("creative_antenna", (p, st) -> new com.sparkgap.pgtelegraph.block.CreativeAntennaBlockEntity(PgTelegraph.CREATIVE_ANTENNA_BE.get(), p, st), CREATIVE_ANTENNA);
+    public static final DeferredBlock<com.sparkgap.pgtelegraph.block.SelectorBlock> SELECTOR = block("operating_selector",
+            () -> new com.sparkgap.pgtelegraph.block.SelectorBlock(device(MapColor.COLOR_BLACK, SoundType.METAL)));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<com.sparkgap.pgtelegraph.block.SelectorBlockEntity>> SELECTOR_BE =
+            be("operating_selector", (p, st) -> new com.sparkgap.pgtelegraph.block.SelectorBlockEntity(PgTelegraph.SELECTOR_BE.get(), p, st), SELECTOR);
     public static final DeferredBlock<com.sparkgap.pgtelegraph.block.TransmitterBlock> CREATIVE_TRANSMITTER = block("creative_transmitter",
             () -> new com.sparkgap.pgtelegraph.block.TransmitterBlock(device(MapColor.COLOR_PURPLE, SoundType.METAL), new net.minecraft.network.chat.Component[]{
                     net.minecraft.network.chat.Component.translatable("pgtelegraph.terminal.pwr_pos"),
@@ -803,7 +807,7 @@ public class PgTelegraph {
             "elt", "repair_kit", "license", "logbook", "qsl_card", "cipher_machine"
 , "launch_pad", "rocket", "cubesat", "satellite_tracker"
 , "ionosonde", "qso_robot", "tape_recorder", "magnetic_tape", "coax_switch", "phased_array",
-            "sstv_monitor", "rocket_medium", "rocket_heavy", "broadcast_transmitter", "fm_broadcast_transmitter", "tv_transmitter", "tv_receiver", "broadcast_radio", "power_supply", "ups", "power_panel", "equipment_rack", "dtmf_decoder", "aprs_station", "aprs_tracker", "nanovna", "patch_cord", "mobile_radio", "field_phone", "duplex_set", "line_test_set", "submarine_cable", "mirror_galvanometer", "telegraph_repeater", "creative_transmitter", "creative_receiver", "creative_antenna", "line_simulator", "audio_amplifier", "speaker", "horn_speaker", "jammer", "manpack_radio", "inline_lna", "fpv_goggles", "blank_record", "recorded_disc"
+            "sstv_monitor", "rocket_medium", "rocket_heavy", "broadcast_transmitter", "fm_broadcast_transmitter", "tv_transmitter", "tv_receiver", "broadcast_radio", "power_supply", "ups", "power_panel", "equipment_rack", "operating_selector", "dtmf_decoder", "aprs_station", "aprs_tracker", "nanovna", "patch_cord", "mobile_radio", "field_phone", "duplex_set", "line_test_set", "submarine_cable", "mirror_galvanometer", "telegraph_repeater", "creative_transmitter", "creative_receiver", "creative_antenna", "line_simulator", "audio_amplifier", "speaker", "horn_speaker", "jammer", "manpack_radio", "inline_lna", "fpv_goggles", "blank_record", "recorded_disc"
 , "microphone", "camera", "bodycam", "camcorder", "video_tape", "vcr", "photo", "tv_camera", "sstv_transmitter"
 //SHOWNX
     ));

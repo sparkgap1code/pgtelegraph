@@ -109,6 +109,7 @@ public class RatingsTooltip implements TooltipModifier {
         register(PgTelegraph.POWER_SUPPLY.get().asItem(), com.sparkgap.pgtelegraph.block.PowerSupplyBlockEntity.SPEC);
         register(PgTelegraph.UPS.get().asItem(), com.sparkgap.pgtelegraph.block.PowerSupplyBlockEntity.SPEC);
         register(PgTelegraph.POWER_PANEL.get().asItem(), com.sparkgap.pgtelegraph.block.PowerPanelBlockEntity.SPEC);
+        register(PgTelegraph.SELECTOR.get().asItem(), com.sparkgap.pgtelegraph.block.SelectorBlockEntity.SPEC);
         register(PgTelegraph.APRS_STATION.get().asItem(), com.sparkgap.pgtelegraph.block.AprsStationBlockEntity.SPEC);
         register(PgTelegraph.FIELD_PHONE.get().asItem(), com.sparkgap.pgtelegraph.block.FieldPhoneBlockEntity.SPEC);
         register(PgTelegraph.DUPLEX_SET.get().asItem(), com.sparkgap.pgtelegraph.block.DuplexSetBlockEntity.SPEC);

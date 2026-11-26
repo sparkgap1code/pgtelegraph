@@ -204,7 +204,7 @@ public class VcrBlockEntity extends SmartBlockEntity implements IHaveGoggleInfor
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         if (!hasTape()) {
             tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.vcr.no_tape")).withStyle(ChatFormatting.GRAY));
             return true;

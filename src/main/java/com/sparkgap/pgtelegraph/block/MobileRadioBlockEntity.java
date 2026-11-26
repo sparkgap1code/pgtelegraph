@@ -92,7 +92,7 @@ public class MobileRadioBlockEntity extends SmartBlockEntity implements IHaveGog
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     " + name()).withStyle(ChatFormatting.AQUA));
         tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.aprs.key", AprsTrackerItem.keyText(aprsKey())))
                 .withStyle(ChatFormatting.GOLD));

@@ -201,7 +201,7 @@ public class SpeakerBlockEntity extends RatedBlockEntity implements IHaveGoggleI
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal(String.format(Locale.ROOT, "     %.0f W / %.0f W  (%.0f dB @ 1 m, %.0f dB @ 100 m)", shownW, ratedW(),
                 spl(horn(), Math.max(shownW, 1e-6), 1, 0), spl(horn(), Math.max(shownW, 1e-6), 100, 0))).withStyle(ChatFormatting.AQUA));
         if (horn()) tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.speaker.tilt", String.format(Locale.ROOT, "%+d°", tiltDeg())))

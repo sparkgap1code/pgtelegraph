@@ -66,7 +66,7 @@ public class InsulatorBlockEntity extends RatedBlockEntity implements IHaveGoggl
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         double r = leakOhms();
         tip.add(Component.literal("     ").append(Component.translatable(wet ? "pgtelegraph.insulator.wet" : "pgtelegraph.insulator.dry"))
                 .append(String.format(Locale.ROOT, ": %s", r >= 1e6 ? String.format(Locale.ROOT, "%.0f MΩ", r / 1e6)

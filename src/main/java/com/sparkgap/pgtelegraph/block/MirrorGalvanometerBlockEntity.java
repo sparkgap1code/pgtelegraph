@@ -119,7 +119,7 @@ public class MirrorGalvanometerBlockEntity extends RatedBlockEntity implements I
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         double ua = amps * 1e6;
         tip.add(Component.literal(Math.abs(ua) >= 1000 ? String.format(Locale.ROOT, "     %+.2f mA", ua / 1000) : String.format(Locale.ROOT, "     %+.1f μA", ua))
                 .withStyle(closed ? ChatFormatting.GREEN : ChatFormatting.GRAY));

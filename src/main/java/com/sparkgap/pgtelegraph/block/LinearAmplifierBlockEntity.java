@@ -270,7 +270,7 @@ public class LinearAmplifierBlockEntity extends RatedBlockEntity implements IHav
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(line("pgtelegraph.amplifier.filament", Component.literal(shownWarm >= 100 ? "OK" : shownWarm + " %")
                 .withStyle(shownWarm >= 100 ? ChatFormatting.GREEN : ChatFormatting.YELLOW)));
         tip.add(line("pgtelegraph.amplifier.mode", Component.translatable(bypass ? "pgtelegraph.amplifier.bypass"

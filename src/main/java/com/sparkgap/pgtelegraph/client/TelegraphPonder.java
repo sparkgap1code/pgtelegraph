@@ -108,6 +108,8 @@ public class TelegraphPonder implements PonderPlugin {
                 .addStoryBoard("fpv_goggles", TelegraphPonder::fpvGogglesScene);
         helper.forComponents(id("microphone"), id("audio_amplifier"), id("speaker"), id("horn_speaker"))
                 .addStoryBoard("pa_microphone", TelegraphPonder::paMicrophoneScene);
+        helper.forComponents(id("operating_selector"))
+                .addStoryBoard("operating_selector", TelegraphPonder::operatingSelectorScene);
         helper.forComponents(id("ups"), id("power_panel"))
                 .addStoryBoard("ups_power_panel", TelegraphPonder::upsPowerPanelScene);
         helper.forComponents(id("equipment_rack"))
@@ -1992,5 +1994,49 @@ public class TelegraphPonder implements PonderPlugin {
         scene.overlay().showText(170).colored(PonderPalette.BLUE).text("A creative antenna is matched on every frequency with no loss of its own; its value box sets how high it counts as, 1 to 2500 m")
                 .pointAt(util.vector().topOf(2, 1, 5)).placeNearTarget();
         scene.idle(180);
+    }
+
+    static void operatingSelectorScene(SceneBuilder scene, SceneBuildingUtil util) {
+        ElectricInstructions elec = ElectricInstructions.of(scene);
+        scene.title("operating_selector", "One operating position, several transmitters");
+        scene.configureBasePlate(0, 0, 7);
+        scene.showBasePlate();
+        scene.idle(10);
+        scene.world().showSection(util.select().fromTo(2, 1, 1, 4, 1, 1), Direction.DOWN);
+        scene.idle(8);
+        scene.overlay().showText(129).text("An operating-position selector puts one key and one microphone on up to four transmitters")
+                .pointAt(util.vector().topOf(3, 1, 1)).placeNearTarget().attachKeyFrame();
+        scene.idle(139);
+        scene.world().showSection(util.select().fromTo(1, 1, 4, 5, 1, 5), Direction.DOWN);
+        scene.idle(8);
+        elec.connect(util.grid().at(3, 1, 1), 2, util.grid().at(1, 1, 4), 2, DyeColor.YELLOW);
+        elec.connect(util.grid().at(3, 1, 1), 1, util.grid().at(1, 1, 4), 3, DyeColor.BLACK);
+        scene.idle(4);
+        elec.connect(util.grid().at(3, 1, 1), 3, util.grid().at(3, 1, 5), 2, DyeColor.YELLOW);
+        elec.connect(util.grid().at(3, 1, 1), 1, util.grid().at(3, 1, 5), 3, DyeColor.BLACK);
+        scene.idle(4);
+        elec.connect(util.grid().at(3, 1, 1), 4, util.grid().at(5, 1, 4), 2, DyeColor.YELLOW);
+        elec.connect(util.grid().at(3, 1, 1), 1, util.grid().at(5, 1, 4), 3, DyeColor.BLACK);
+        scene.idle(4);
+        elec.connect(util.grid().at(4, 1, 1), 0, util.grid().at(3, 1, 1), 0, DyeColor.RED);
+        elec.connect(util.grid().at(4, 1, 1), 1, util.grid().at(3, 1, 1), 1, DyeColor.BLACK);
+        scene.idle(4);
+        scene.overlay().showText(136).text("The key goes on KEY IN / COM, each transmitter's KEY on OUT1-OUT4, and all their KEY COMs on COM")
+                .pointAt(util.vector().topOf(3, 1, 1)).placeNearTarget().attachKeyFrame();
+        scene.idle(146);
+        scene.overlay().showControls(util.vector().topOf(3, 1, 1), net.createmod.catnip.math.Pointing.DOWN, 50).rightClick();
+        scene.idle(8);
+        scene.overlay().showText(169).text("Right-click to pick the next set (sneak: the previous one, 0 = off), or feed it a redstone signal of 1-4. A lamp shows the choice")
+                .pointAt(util.vector().topOf(3, 1, 1)).placeNearTarget().attachKeyFrame();
+        scene.idle(179);
+        scene.overlay().showText(113).text("A microphone touching the selector talks into the chosen transmitter only")
+                .pointAt(util.vector().topOf(2, 1, 1)).placeNearTarget().attachKeyFrame();
+        scene.idle(123);
+        scene.overlay().showControls(util.vector().topOf(3, 1, 5), net.createmod.catnip.math.Pointing.DOWN, 50).rightClick()
+                .withItem(new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.NAME_TAG));
+        scene.idle(8);
+        scene.overlay().showText(189).colored(PonderPalette.BLUE).text("Tell the sets apart with name tags: right-click any device with a renamed tag. The label shows in the goggles, on the dial screen and on the selector")
+                .pointAt(util.vector().topOf(3, 1, 5)).placeNearTarget();
+        scene.idle(199);
     }
 }

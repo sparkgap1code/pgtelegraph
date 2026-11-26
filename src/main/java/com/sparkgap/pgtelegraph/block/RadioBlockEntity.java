@@ -282,7 +282,7 @@ public abstract class RadioBlockEntity extends RatedBlockEntity implements IHave
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.radio.freq"))
                 .append(": ").append(Component.literal(formatFreq(freqHz)).withStyle(ChatFormatting.AQUA)));
         if (linkText.isEmpty()) {

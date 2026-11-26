@@ -171,7 +171,7 @@ public class AudioAmpBlockEntity extends RatedBlockEntity implements IHaveGoggle
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     ").append(Component.translatable(hasSource ? "pgtelegraph.amp.source" : "pgtelegraph.amp.no_source"))
                 .withStyle(hasSource ? ChatFormatting.GREEN : ChatFormatting.RED));
         tip.add(Component.literal(String.format(Locale.ROOT, "     %.0f W  ", outW))

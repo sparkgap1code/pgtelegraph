@@ -129,7 +129,7 @@ public class AlternatorBlockEntity extends ElectricKineticBlockEntity {
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
         super.addToGoggleTooltip(tip, sneaking);
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.radio.freq")).append(": ")
                 .append(Component.literal(RadioBlockEntity.formatFreq(shownHz)).withStyle(ChatFormatting.AQUA)));
         tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.transmitter.rf_out")).append(": ")

@@ -128,7 +128,7 @@ public class LineSimulatorBlockEntity extends RatedBlockEntity implements IHaveG
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     " + StepScroll.Rows.fmt((int) meters(), "m") + "  ").append(Component.translatable("pgtelegraph.linesim.kind." + kind))
                 .withStyle(ChatFormatting.GOLD));
         tip.add(Component.literal(String.format(Locale.ROOT, "     %.1f Ω", 2 * halfOhms())).withStyle(ChatFormatting.GRAY));

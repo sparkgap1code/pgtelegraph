@@ -137,7 +137,7 @@ public class SolarBeaconBlockEntity extends SmartBlockEntity implements IHaveGog
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.radio.freq"))
                 .append(": ").append(Component.literal(RadioBlockEntity.formatFreq(freqHz)).withStyle(ChatFormatting.AQUA)));
         tip.add(Component.literal(String.format(Locale.ROOT, "     ☀ %.1f W   ⚡ %.0f %%   RF %.1f W",

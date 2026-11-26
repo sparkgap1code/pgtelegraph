@@ -462,7 +462,7 @@ public class QsoRobotBlockEntity extends com.sparkgap.pgtelegraph.block.PoweredS
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()).append(" " + call()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)).append(" " + call()));
         tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.robot.mode." + opMode)).withStyle(ChatFormatting.GOLD));
         if (opMode == DX) tip.add(Component.literal("     TX " + RadioBlockEntity.formatFreq(freqHz) + "  RX " + RadioBlockEntity.formatFreq(freqHz + SPLIT_HZ))
                 .withStyle(ChatFormatting.AQUA));

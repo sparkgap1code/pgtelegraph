@@ -251,7 +251,7 @@ public class VhfAntennaBlockEntity extends SmartBlockEntity implements IHaveGogg
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         if (type() == VhfAntennaBlock.Type.DISH)
             tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.vhf.dish_band")).withStyle(ChatFormatting.AQUA));
         if (band != null || type() == VhfAntennaBlock.Type.LOOP) {

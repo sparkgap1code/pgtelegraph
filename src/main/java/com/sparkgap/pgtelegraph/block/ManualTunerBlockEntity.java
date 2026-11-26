@@ -184,7 +184,7 @@ public class ManualTunerBlockEntity extends SmartBlockEntity implements IHaveGog
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.tuner.match", RadioMath.formatMHz(matchMHz())))
                 .withStyle(ChatFormatting.GOLD));
         tip.add(Component.literal(String.format(Locale.ROOT, "     L %.2f µH  C %.0f pF", uH(l.getValue()), pF(c.getValue())))

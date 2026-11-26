@@ -193,7 +193,7 @@ public class BroadcastRadioBlockEntity extends com.sparkgap.pgtelegraph.block.Po
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     " + RadioBlockEntity.formatFreq(freqHz) + (on ? "" : "  OFF")).withStyle(ChatFormatting.AQUA));
         if (!title.isEmpty()) tip.add(Component.literal("     ♫ " + title + "  "
                 + Broadcasts.position(level == null ? 0 : level.getGameTime(), startTick, lengthTicks)).withStyle(ChatFormatting.LIGHT_PURPLE));

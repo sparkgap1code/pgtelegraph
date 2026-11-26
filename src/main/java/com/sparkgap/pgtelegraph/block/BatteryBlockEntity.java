@@ -229,7 +229,7 @@ public class BatteryBlockEntity extends RatedBlockEntity implements IHaveGoggleI
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal(String.format(Locale.ROOT, "     %.2f V  %+.1f A", shownV, shownA)).withStyle(ChatFormatting.GOLD));
         tip.add(Component.literal(String.format(Locale.ROOT, "     SOC %.0f %%  (%.0f Ah)", soc * 100, chem().ah * health))
                 .withStyle(soc < 0.1 || soc > 1 ? ChatFormatting.RED : ChatFormatting.GREEN));

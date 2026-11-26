@@ -196,7 +196,7 @@ public class PowerSupplyBlockEntity extends RatedBlockEntity implements IHaveGog
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         if (isBurnt()) {
             tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.psu.burnt")).withStyle(ChatFormatting.RED));
             return true;

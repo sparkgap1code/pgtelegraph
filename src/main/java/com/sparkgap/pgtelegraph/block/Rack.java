@@ -37,7 +37,7 @@ public final class Rack {
             "aprs_station", "qso_robot", "ionosonde", "broadcast_radio", "audio_amplifier", "jammer", "decoder", "oscilloscope",
             "mobile_radio", "line_test_set", "duplex_set", "telegraph_repeater", "bms", "tape_recorder", "vcr", "sstv_transmitter",
             "tv_transmitter", "handheld_charger", "fm_broadcast_transmitter", "broadcast_transmitter", "line_simulator",
-            "sstv_monitor", "tv_receiver");
+            "sstv_monitor", "tv_receiver", "operating_selector");
 
     /** the rack frame drawn and collided around a mounted unit */
     public static final VoxelShape POSTS = Shapes.or(

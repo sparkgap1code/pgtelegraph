@@ -140,7 +140,7 @@ public class LineTestSetBlockEntity extends RatedBlockEntity implements IHaveGog
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         if (lastOhms >= 0) tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.linetest.result", ohms(lastOhms)))
                 .withStyle(ChatFormatting.GOLD));
         for (String s : report) tip.add(Component.literal("     ").append(line(s)).withStyle(ChatFormatting.GRAY));

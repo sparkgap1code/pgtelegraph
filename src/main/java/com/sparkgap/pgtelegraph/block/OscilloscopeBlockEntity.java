@@ -84,7 +84,7 @@ public class OscilloscopeBlockEntity extends RatedBlockEntity implements IHaveGo
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal(String.format(Locale.ROOT, "     CH1 %.2f V", sample(trace1, 0))).withStyle(ChatFormatting.YELLOW));
         tip.add(Component.literal(String.format(Locale.ROOT, "     CH2 %.2f V", sample(trace2, 0))).withStyle(ChatFormatting.AQUA));
         return true;

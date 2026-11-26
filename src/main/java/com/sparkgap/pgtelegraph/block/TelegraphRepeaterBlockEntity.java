@@ -153,7 +153,7 @@ public class TelegraphRepeaterBlockEntity extends RatedBlockEntity implements IH
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal(String.format(Locale.ROOT, "     W %.1f mA   E %.1f mA", shownW, shownE)).withStyle(ChatFormatting.GRAY));
         tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.trepeater.dir." + (dir == HOLD ? NONE : dir)))
                 .withStyle(dir == W2E || dir == E2W ? ChatFormatting.GREEN : ChatFormatting.GRAY));

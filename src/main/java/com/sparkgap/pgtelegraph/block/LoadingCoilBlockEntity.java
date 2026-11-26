@@ -198,7 +198,7 @@ public class LoadingCoilBlockEntity extends SmartBlockEntity implements IHaveGog
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(line("pgtelegraph.coil.inductance", String.format(Locale.ROOT, "%.4g mH", inductanceMH), ChatFormatting.AQUA));
         if (shownF0 <= 0) {
             tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.coil.no_mast").withStyle(ChatFormatting.RED)));

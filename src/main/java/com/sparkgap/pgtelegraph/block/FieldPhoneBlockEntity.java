@@ -139,7 +139,7 @@ public class FieldPhoneBlockEntity extends RatedBlockEntity implements IHaveGogg
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         tip.add(Component.literal("     ").append(Component.translatable(offHook() ? "pgtelegraph.phone.off_hook" : "pgtelegraph.phone.on_hook"))
                 .withStyle(offHook() ? ChatFormatting.GREEN : ChatFormatting.GRAY));
         if (ringing) tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.phone.ringing")).withStyle(ChatFormatting.GOLD));

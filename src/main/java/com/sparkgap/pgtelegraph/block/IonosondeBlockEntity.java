@@ -83,7 +83,7 @@ public class IonosondeBlockEntity extends com.sparkgap.pgtelegraph.block.Powered
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         if (!hasAntenna) {
             tip.add(Component.literal("     ").append(Component.translatable("pgtelegraph.radio.no_antenna")).withStyle(ChatFormatting.RED));
             return true;

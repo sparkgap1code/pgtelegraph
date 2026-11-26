@@ -173,7 +173,7 @@ public class TapeRecorderBlockEntity extends SmartBlockEntity implements IHaveGo
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tip, boolean sneaking) {
-        tip.add(Component.literal("    ").append(getBlockState().getBlock().getName()));
+        tip.add(Component.literal("    ").append(com.sparkgap.pgtelegraph.block.Labels.title(this)));
         String s = tape.isEmpty() ? "-" : state == RECORD ? "● REC" : state == PLAY ? "▶ PLAY" : "■ STOP";
         tip.add(Component.literal("     " + s).withStyle(state == RECORD ? ChatFormatting.RED : ChatFormatting.AQUA));
         if (!tape.isEmpty()) {
