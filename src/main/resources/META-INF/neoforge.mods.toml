@@ -8,6 +8,7 @@ modId = "pgtelegraph"
 version = "${file.jarVersion}"
 displayName = "Power Grid Telegraph"
 authors = "sparkgap1code"
+credits = "Made with heavy use of AI: most code and assets were written by Anthropic's Claude (Claude Code), directed and tested by sparkgap1code."
 displayURL = "https://github.com/sparkgap1code/pgtelegraph"
 description = '''
 Telegraphy, radio, TV and satellites that run on real Create: Power Grid circuits.

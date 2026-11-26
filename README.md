@@ -49,6 +49,12 @@ The other mods are compile-only dependencies and are not in this repository. Put
 `libs/`: Create, Create: Power Grid, Flywheel, Ponder, Registrate, Architectury, CC: Tweaked.
 Then run `./gradlew build` (Java 21). The jar is in `build/libs/`.
 
+## AI disclosure
+This mod is made with heavy use of AI. Most of the code, models, textures, sound synthesis and
+text (including the translations) were written by Anthropic's Claude (through Claude Code),
+directed by the author: the author chose the features, set the requirements and checked the
+results in game. Bug reports are especially welcome because of this.
+
 ## License
 GPL-3.0-or-later — see `LICENSE`. Third-party material is listed in `NOTICE`.
 
@@ -67,5 +73,9 @@ GPL-3.0-or-later — see `LICENSE`. Third-party material is listed in `NOTICE`.
 
 **버그 제보:** [GitHub 이슈](https://github.com/sparkgap1code/pgtelegraph/issues)에 게임 로그(`logs/latest.log`)나 크래시 리포트, 모드 목록, 무엇을 했는지를 이슈로
 올려 주십시오. 회로 문제는 고글 화면 스크린샷이 큰 도움이 됩니다.
+
+**AI 사용 고지:** 이 모드는 AI를 많이 사용해 만들었습니다. 코드, 모델, 텍스처, 소리 합성, 설명문(번역 포함)의
+대부분은 Anthropic의 Claude(Claude Code)가 작성했고, 제작자는 기능을 정하고 요구 사항을 주고 게임에서 결과를
+확인했습니다. 그래서 버그 제보가 특히 큰 도움이 됩니다.
 
 **라이선스:** GPL-3.0-or-later.
