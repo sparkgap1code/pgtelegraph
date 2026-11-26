@@ -33,7 +33,7 @@ public class LightningArresterBlock extends Block implements RfPort {
     }
 
     static boolean isGround(Level level, BlockPos p) {
-        if (level.getBlockState(p).getBlock() instanceof EquipmentRackBlock) return EquipmentRackBlock.grounded(level, p);
+        if (Rack.isRack(level.getBlockState(p))) return EquipmentRackBlock.grounded(level, p);
         return isEarth(level, p);
     }
 

@@ -1,34 +1,64 @@
 {
-  "variants": {
-    "energized=false,facing=north": {
-      "model": "pgtelegraph:block/buzzer"
-    },
-    "energized=true,facing=north": {
-      "model": "pgtelegraph:block/buzzer_on"
-    },
-    "energized=false,facing=east": {
-      "model": "pgtelegraph:block/buzzer",
-      "y": 90
-    },
-    "energized=true,facing=east": {
-      "model": "pgtelegraph:block/buzzer_on",
-      "y": 90
-    },
-    "energized=false,facing=south": {
-      "model": "pgtelegraph:block/buzzer",
-      "y": 180
-    },
-    "energized=true,facing=south": {
-      "model": "pgtelegraph:block/buzzer_on",
-      "y": 180
-    },
-    "energized=false,facing=west": {
-      "model": "pgtelegraph:block/buzzer",
-      "y": 270
-    },
-    "energized=true,facing=west": {
-      "model": "pgtelegraph:block/buzzer_on",
-      "y": 270
-    }
+ "variants": {
+  "energized=false,facing=north,racked=false": {
+   "model": "pgtelegraph:block/buzzer"
+  },
+  "energized=false,facing=north,racked=true": {
+   "model": "pgtelegraph:block/buzzer"
+  },
+  "energized=true,facing=north,racked=false": {
+   "model": "pgtelegraph:block/buzzer_on"
+  },
+  "energized=true,facing=north,racked=true": {
+   "model": "pgtelegraph:block/buzzer_on"
+  },
+  "energized=false,facing=east,racked=false": {
+   "model": "pgtelegraph:block/buzzer",
+   "y": 90
+  },
+  "energized=false,facing=east,racked=true": {
+   "model": "pgtelegraph:block/buzzer",
+   "y": 90
+  },
+  "energized=true,facing=east,racked=false": {
+   "model": "pgtelegraph:block/buzzer_on",
+   "y": 90
+  },
+  "energized=true,facing=east,racked=true": {
+   "model": "pgtelegraph:block/buzzer_on",
+   "y": 90
+  },
+  "energized=false,facing=south,racked=false": {
+   "model": "pgtelegraph:block/buzzer",
+   "y": 180
+  },
+  "energized=false,facing=south,racked=true": {
+   "model": "pgtelegraph:block/buzzer",
+   "y": 180
+  },
+  "energized=true,facing=south,racked=false": {
+   "model": "pgtelegraph:block/buzzer_on",
+   "y": 180
+  },
+  "energized=true,facing=south,racked=true": {
+   "model": "pgtelegraph:block/buzzer_on",
+   "y": 180
+  },
+  "energized=false,facing=west,racked=false": {
+   "model": "pgtelegraph:block/buzzer",
+   "y": 270
+  },
+  "energized=false,facing=west,racked=true": {
+   "model": "pgtelegraph:block/buzzer",
+   "y": 270
+  },
+  "energized=true,facing=west,racked=false": {
+   "model": "pgtelegraph:block/buzzer_on",
+   "y": 270
+  },
+  "energized=true,facing=west,racked=true": {
+   "model": "pgtelegraph:block/buzzer_on",
+   "y": 270
   }
+ }
 }

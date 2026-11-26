@@ -1,33 +1,63 @@
 {
  "variants": {
-  "facing=north,loaded=false": {
+  "facing=north,loaded=false,racked=false": {
    "model": "pgtelegraph:block/handheld_charger"
   },
-  "facing=north,loaded=true": {
+  "facing=north,loaded=false,racked=true": {
+   "model": "pgtelegraph:block/handheld_charger_racked"
+  },
+  "facing=north,loaded=true,racked=false": {
    "model": "pgtelegraph:block/handheld_charger_loaded"
   },
-  "facing=east,loaded=false": {
+  "facing=north,loaded=true,racked=true": {
+   "model": "pgtelegraph:block/handheld_charger_loaded_racked"
+  },
+  "facing=east,loaded=false,racked=false": {
    "model": "pgtelegraph:block/handheld_charger",
    "y": 90
   },
-  "facing=east,loaded=true": {
+  "facing=east,loaded=false,racked=true": {
+   "model": "pgtelegraph:block/handheld_charger_racked",
+   "y": 90
+  },
+  "facing=east,loaded=true,racked=false": {
    "model": "pgtelegraph:block/handheld_charger_loaded",
    "y": 90
   },
-  "facing=south,loaded=false": {
+  "facing=east,loaded=true,racked=true": {
+   "model": "pgtelegraph:block/handheld_charger_loaded_racked",
+   "y": 90
+  },
+  "facing=south,loaded=false,racked=false": {
    "model": "pgtelegraph:block/handheld_charger",
    "y": 180
   },
-  "facing=south,loaded=true": {
+  "facing=south,loaded=false,racked=true": {
+   "model": "pgtelegraph:block/handheld_charger_racked",
+   "y": 180
+  },
+  "facing=south,loaded=true,racked=false": {
    "model": "pgtelegraph:block/handheld_charger_loaded",
    "y": 180
   },
-  "facing=west,loaded=false": {
+  "facing=south,loaded=true,racked=true": {
+   "model": "pgtelegraph:block/handheld_charger_loaded_racked",
+   "y": 180
+  },
+  "facing=west,loaded=false,racked=false": {
    "model": "pgtelegraph:block/handheld_charger",
    "y": 270
   },
-  "facing=west,loaded=true": {
+  "facing=west,loaded=false,racked=true": {
+   "model": "pgtelegraph:block/handheld_charger_racked",
+   "y": 270
+  },
+  "facing=west,loaded=true,racked=false": {
    "model": "pgtelegraph:block/handheld_charger_loaded",
+   "y": 270
+  },
+  "facing=west,loaded=true,racked=true": {
+   "model": "pgtelegraph:block/handheld_charger_loaded_racked",
    "y": 270
   }
  }

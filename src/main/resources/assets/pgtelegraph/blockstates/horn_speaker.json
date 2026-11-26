@@ -1,17 +1,32 @@
 {
  "variants": {
-  "facing=north": {
+  "facing=north,racked=false": {
    "model": "pgtelegraph:block/horn_speaker"
   },
-  "facing=east": {
+  "facing=north,racked=true": {
+   "model": "pgtelegraph:block/horn_speaker"
+  },
+  "facing=east,racked=false": {
    "model": "pgtelegraph:block/horn_speaker",
    "y": 90
   },
-  "facing=south": {
+  "facing=east,racked=true": {
+   "model": "pgtelegraph:block/horn_speaker",
+   "y": 90
+  },
+  "facing=south,racked=false": {
    "model": "pgtelegraph:block/horn_speaker",
    "y": 180
   },
-  "facing=west": {
+  "facing=south,racked=true": {
+   "model": "pgtelegraph:block/horn_speaker",
+   "y": 180
+  },
+  "facing=west,racked=false": {
+   "model": "pgtelegraph:block/horn_speaker",
+   "y": 270
+  },
+  "facing=west,racked=true": {
    "model": "pgtelegraph:block/horn_speaker",
    "y": 270
   }

@@ -1,33 +1,63 @@
 {
  "variants": {
-  "facing=north,lit=false": {
+  "facing=north,lit=false,racked=false": {
    "model": "pgtelegraph:block/broadcast_amplifier"
   },
-  "facing=north,lit=true": {
+  "facing=north,lit=false,racked=true": {
+   "model": "pgtelegraph:block/broadcast_amplifier_racked"
+  },
+  "facing=north,lit=true,racked=false": {
    "model": "pgtelegraph:block/broadcast_amplifier_lit"
   },
-  "facing=east,lit=false": {
+  "facing=north,lit=true,racked=true": {
+   "model": "pgtelegraph:block/broadcast_amplifier_lit_racked"
+  },
+  "facing=east,lit=false,racked=false": {
    "model": "pgtelegraph:block/broadcast_amplifier",
    "y": 90
   },
-  "facing=east,lit=true": {
+  "facing=east,lit=false,racked=true": {
+   "model": "pgtelegraph:block/broadcast_amplifier_racked",
+   "y": 90
+  },
+  "facing=east,lit=true,racked=false": {
    "model": "pgtelegraph:block/broadcast_amplifier_lit",
    "y": 90
   },
-  "facing=south,lit=false": {
+  "facing=east,lit=true,racked=true": {
+   "model": "pgtelegraph:block/broadcast_amplifier_lit_racked",
+   "y": 90
+  },
+  "facing=south,lit=false,racked=false": {
    "model": "pgtelegraph:block/broadcast_amplifier",
    "y": 180
   },
-  "facing=south,lit=true": {
+  "facing=south,lit=false,racked=true": {
+   "model": "pgtelegraph:block/broadcast_amplifier_racked",
+   "y": 180
+  },
+  "facing=south,lit=true,racked=false": {
    "model": "pgtelegraph:block/broadcast_amplifier_lit",
    "y": 180
   },
-  "facing=west,lit=false": {
+  "facing=south,lit=true,racked=true": {
+   "model": "pgtelegraph:block/broadcast_amplifier_lit_racked",
+   "y": 180
+  },
+  "facing=west,lit=false,racked=false": {
    "model": "pgtelegraph:block/broadcast_amplifier",
    "y": 270
   },
-  "facing=west,lit=true": {
+  "facing=west,lit=false,racked=true": {
+   "model": "pgtelegraph:block/broadcast_amplifier_racked",
+   "y": 270
+  },
+  "facing=west,lit=true,racked=false": {
    "model": "pgtelegraph:block/broadcast_amplifier_lit",
+   "y": 270
+  },
+  "facing=west,lit=true,racked=true": {
+   "model": "pgtelegraph:block/broadcast_amplifier_lit_racked",
    "y": 270
   }
  }

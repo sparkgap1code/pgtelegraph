@@ -1,17 +1,32 @@
 {
  "variants": {
-  "facing=north": {
+  "facing=north,racked=false": {
    "model": "pgtelegraph:block/submarine_cable"
   },
-  "facing=east": {
+  "facing=north,racked=true": {
+   "model": "pgtelegraph:block/submarine_cable"
+  },
+  "facing=east,racked=false": {
    "model": "pgtelegraph:block/submarine_cable",
    "y": 90
   },
-  "facing=south": {
+  "facing=east,racked=true": {
+   "model": "pgtelegraph:block/submarine_cable",
+   "y": 90
+  },
+  "facing=south,racked=false": {
    "model": "pgtelegraph:block/submarine_cable",
    "y": 180
   },
-  "facing=west": {
+  "facing=south,racked=true": {
+   "model": "pgtelegraph:block/submarine_cable",
+   "y": 180
+  },
+  "facing=west,racked=false": {
+   "model": "pgtelegraph:block/submarine_cable",
+   "y": 270
+  },
+  "facing=west,racked=true": {
    "model": "pgtelegraph:block/submarine_cable",
    "y": 270
   }

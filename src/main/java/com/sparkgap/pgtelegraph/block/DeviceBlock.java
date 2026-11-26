@@ -43,15 +43,16 @@ public abstract class DeviceBlock<T extends BlockEntity> extends ElectricBlock i
         this.beClass = beClass;
         this.beType = beType;
         setTerminalCollection(BlockStateTerminalCollection.builder(this)
-                .forAllStates(s -> Geometry.terminals(terminals, names, s.getValue(FACING)))
+                .forAllStates(s -> Geometry.terminals(Rack.racked(s) ? Rack.rearTerminals(terminals) : terminals, names, s.getValue(FACING)))
                 .withShapeMapper(s -> shapes[s.getValue(FACING).get2DDataValue()])
                 .build());
+        registerDefaultState(defaultBlockState().setValue(Rack.RACKED, false));
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
-        builder.add(FACING);
+        builder.add(FACING, Rack.RACKED);
     }
 
     @Override
@@ -61,11 +62,13 @@ public abstract class DeviceBlock<T extends BlockEntity> extends ElectricBlock i
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
-        return shapes[state.getValue(FACING).get2DDataValue()];
+        VoxelShape s = shapes[state.getValue(FACING).get2DDataValue()];
+        return Rack.racked(state) ? net.minecraft.world.phys.shapes.Shapes.or(s, Rack.POSTS) : s;
     }
 
     @Override
     protected boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+        if (Rack.racked(state)) return true; // held by the rack frame
         return Block.canSupportCenter(level, pos.below(), Direction.UP);
     }
 

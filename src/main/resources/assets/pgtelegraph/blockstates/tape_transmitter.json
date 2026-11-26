@@ -1,32 +1,62 @@
 {
  "variants": {
-  "facing=north,has_tape=false": {
+  "facing=north,has_tape=false,racked=false": {
    "model": "pgtelegraph:block/tape_transmitter"
   },
-  "facing=north,has_tape=true": {
+  "facing=north,has_tape=false,racked=true": {
+   "model": "pgtelegraph:block/tape_transmitter"
+  },
+  "facing=north,has_tape=true,racked=false": {
    "model": "pgtelegraph:block/tape_transmitter_tape"
   },
-  "facing=east,has_tape=false": {
+  "facing=north,has_tape=true,racked=true": {
+   "model": "pgtelegraph:block/tape_transmitter_tape"
+  },
+  "facing=east,has_tape=false,racked=false": {
    "model": "pgtelegraph:block/tape_transmitter",
    "y": 90
   },
-  "facing=east,has_tape=true": {
+  "facing=east,has_tape=false,racked=true": {
+   "model": "pgtelegraph:block/tape_transmitter",
+   "y": 90
+  },
+  "facing=east,has_tape=true,racked=false": {
    "model": "pgtelegraph:block/tape_transmitter_tape",
    "y": 90
   },
-  "facing=south,has_tape=false": {
+  "facing=east,has_tape=true,racked=true": {
+   "model": "pgtelegraph:block/tape_transmitter_tape",
+   "y": 90
+  },
+  "facing=south,has_tape=false,racked=false": {
    "model": "pgtelegraph:block/tape_transmitter",
    "y": 180
   },
-  "facing=south,has_tape=true": {
+  "facing=south,has_tape=false,racked=true": {
+   "model": "pgtelegraph:block/tape_transmitter",
+   "y": 180
+  },
+  "facing=south,has_tape=true,racked=false": {
    "model": "pgtelegraph:block/tape_transmitter_tape",
    "y": 180
   },
-  "facing=west,has_tape=false": {
+  "facing=south,has_tape=true,racked=true": {
+   "model": "pgtelegraph:block/tape_transmitter_tape",
+   "y": 180
+  },
+  "facing=west,has_tape=false,racked=false": {
    "model": "pgtelegraph:block/tape_transmitter",
    "y": 270
   },
-  "facing=west,has_tape=true": {
+  "facing=west,has_tape=false,racked=true": {
+   "model": "pgtelegraph:block/tape_transmitter",
+   "y": 270
+  },
+  "facing=west,has_tape=true,racked=false": {
+   "model": "pgtelegraph:block/tape_transmitter_tape",
+   "y": 270
+  },
+  "facing=west,has_tape=true,racked=true": {
    "model": "pgtelegraph:block/tape_transmitter_tape",
    "y": 270
   }

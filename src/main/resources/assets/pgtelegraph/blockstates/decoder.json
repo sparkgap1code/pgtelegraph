@@ -1,33 +1,63 @@
 {
  "variants": {
-  "energized=false,facing=north": {
+  "energized=false,facing=north,racked=false": {
    "model": "pgtelegraph:block/decoder"
   },
-  "energized=true,facing=north": {
+  "energized=false,facing=north,racked=true": {
+   "model": "pgtelegraph:block/decoder_racked"
+  },
+  "energized=true,facing=north,racked=false": {
    "model": "pgtelegraph:block/decoder_on"
   },
-  "energized=false,facing=east": {
+  "energized=true,facing=north,racked=true": {
+   "model": "pgtelegraph:block/decoder_on_racked"
+  },
+  "energized=false,facing=east,racked=false": {
    "model": "pgtelegraph:block/decoder",
    "y": 90
   },
-  "energized=true,facing=east": {
+  "energized=false,facing=east,racked=true": {
+   "model": "pgtelegraph:block/decoder_racked",
+   "y": 90
+  },
+  "energized=true,facing=east,racked=false": {
    "model": "pgtelegraph:block/decoder_on",
    "y": 90
   },
-  "energized=false,facing=south": {
+  "energized=true,facing=east,racked=true": {
+   "model": "pgtelegraph:block/decoder_on_racked",
+   "y": 90
+  },
+  "energized=false,facing=south,racked=false": {
    "model": "pgtelegraph:block/decoder",
    "y": 180
   },
-  "energized=true,facing=south": {
+  "energized=false,facing=south,racked=true": {
+   "model": "pgtelegraph:block/decoder_racked",
+   "y": 180
+  },
+  "energized=true,facing=south,racked=false": {
    "model": "pgtelegraph:block/decoder_on",
    "y": 180
   },
-  "energized=false,facing=west": {
+  "energized=true,facing=south,racked=true": {
+   "model": "pgtelegraph:block/decoder_on_racked",
+   "y": 180
+  },
+  "energized=false,facing=west,racked=false": {
    "model": "pgtelegraph:block/decoder",
    "y": 270
   },
-  "energized=true,facing=west": {
+  "energized=false,facing=west,racked=true": {
+   "model": "pgtelegraph:block/decoder_racked",
+   "y": 270
+  },
+  "energized=true,facing=west,racked=false": {
    "model": "pgtelegraph:block/decoder_on",
+   "y": 270
+  },
+  "energized=true,facing=west,racked=true": {
+   "model": "pgtelegraph:block/decoder_on_racked",
    "y": 270
   }
  }

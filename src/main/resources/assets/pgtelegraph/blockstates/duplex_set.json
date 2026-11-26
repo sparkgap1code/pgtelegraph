@@ -1,18 +1,33 @@
 {
  "variants": {
-  "facing=north": {
+  "facing=north,racked=false": {
    "model": "pgtelegraph:block/duplex_set"
   },
-  "facing=east": {
+  "facing=north,racked=true": {
+   "model": "pgtelegraph:block/duplex_set_racked"
+  },
+  "facing=east,racked=false": {
    "model": "pgtelegraph:block/duplex_set",
    "y": 90
   },
-  "facing=south": {
+  "facing=east,racked=true": {
+   "model": "pgtelegraph:block/duplex_set_racked",
+   "y": 90
+  },
+  "facing=south,racked=false": {
    "model": "pgtelegraph:block/duplex_set",
    "y": 180
   },
-  "facing=west": {
+  "facing=south,racked=true": {
+   "model": "pgtelegraph:block/duplex_set_racked",
+   "y": 180
+  },
+  "facing=west,racked=false": {
    "model": "pgtelegraph:block/duplex_set",
+   "y": 270
+  },
+  "facing=west,racked=true": {
+   "model": "pgtelegraph:block/duplex_set_racked",
    "y": 270
   }
  }

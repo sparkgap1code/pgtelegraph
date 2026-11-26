@@ -41,12 +41,12 @@ public class StationBlock<T extends BlockEntity> extends Block implements IBE<T>
         this.cls = cls;
         this.type = type;
         this.use = use;
-        registerDefaultState(defaultBlockState().setValue(DeviceBlock.FACING, Direction.NORTH));
+        registerDefaultState(defaultBlockState().setValue(DeviceBlock.FACING, Direction.NORTH).setValue(Rack.RACKED, false));
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(DeviceBlock.FACING);
+        builder.add(DeviceBlock.FACING, Rack.RACKED);
     }
 
     @Override
@@ -56,7 +56,9 @@ public class StationBlock<T extends BlockEntity> extends Block implements IBE<T>
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
-        return shapes[state.getValue(DeviceBlock.FACING).get2DDataValue()];
+        VoxelShape s = shapes[state.getValue(DeviceBlock.FACING).get2DDataValue()];
+        if (Rack.racked(state)) return net.minecraft.world.phys.shapes.Shapes.or(s, Rack.POSTS);
+        return s;
     }
 
     @Override

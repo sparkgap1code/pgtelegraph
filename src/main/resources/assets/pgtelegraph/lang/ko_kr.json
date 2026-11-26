@@ -1186,7 +1186,7 @@
   "pgtelegraph.panel.replaced": "끊어진 퓨즈를 갈았습니다",
   "pgtelegraph.panel.burnt": "탔습니다 (과전압 또는 과전류)",
   "block.pgtelegraph.equipment_rack": "장비 랙 (19인치)",
-  "block.pgtelegraph.equipment_rack.tooltip.summary": "위아래로 이어지는 강철 랙 프레임입니다. 서로 닿은 랙은 _한 덩어리 금속_이라서, 그중 하나만 접지(접지봉이나 접지 매트)해도 랙 전체가 접지가 됩니다. 랙에 닿은 _피뢰기_는 모두 접지된 것으로 칩니다.",
+  "block.pgtelegraph.equipment_rack.tooltip.summary": "위아래로 이어지는 강철 랙 프레임입니다. _상자형 장비를 들고 랙을 우클릭하면 그 칸에 장착_됩니다. 장착하면 얇게 들어가고, 전선 단자는 _뒷면 단자대_로, 동축은 _뒷면 한 곳_으로만 연결됩니다. 장비마다 뒤에 붙인 동축은 서로 섞이지 않으니 무전기마다 자기 안테나를 쓸 수 있습니다. 같은 랙 묶음에 _전원 분배 패널_을 장착하면 13.8 V 장비에 전원선이 자동으로 깔립니다. 서로 닿은 랙과 장착된 장비는 한 덩어리 금속이라, 하나만 접지해도 전체가 접지되고 닿은 피뢰기도 접지됩니다.",
   "block.pgtelegraph.aprs_station": "APRS 수신국",
   "block.pgtelegraph.aprs_station.tooltip.summary": "144.390 MHz에서 _APRS 위치 보고_를 받아 지도에 찍는 수신국입니다. 위의 _주파수 칸 두 개_에 아이템을 놓으면 그 조합이 네트워크 키가 되고, 같은 키를 쓰는 트래커와 차량 무전기의 보고만 받습니다. 동축으로 안테나가 필요하고, 13.8 V(10 W)로 동작합니다.",
   "block.pgtelegraph.aprs_station.tooltip.condition1": "주파수 칸에 아이템",
@@ -1312,7 +1312,7 @@
   "pgtelegraph.ponder.ups_power_panel.text_4": "장비마다 PWR+는 OUT 하나에, PWR−는 모두 GND에 연결합니다. 한 출력이 합선되면 그 퓨즈만 끊어지고 나머지는 계속 켜져 있습니다",
   "pgtelegraph.ponder.ups_power_panel.text_5": "빈손으로 누르면 끊어진 퓨즈를 갈고, 웅크리고 누르면 퓨즈 용량(5 / 10 / 20 / 30 A)이 바뀝니다. 퓨즈가 끊어지면 표시등이 깜빡입니다",
   "pgtelegraph.ponder.equipment_rack.header": "장비 랙과 접지",
-  "pgtelegraph.ponder.equipment_rack.text_1": "장비 랙은 위아래로 이어져 하나의 강철 프레임이 됩니다. 무전국 장비를 그 안팎에 둡니다",
+  "pgtelegraph.ponder.equipment_rack.text_1": "장비 랙은 위아래로 이어져 하나의 강철 프레임이 됩니다. 상자형 장비를 들고 랙을 우클릭하면 그 칸에 얇게 장착되고, 단자와 동축 단자는 뒷면으로 옮겨집니다",
   "pgtelegraph.ponder.equipment_rack.text_2": "서로 닿은 랙은 한 덩어리 금속입니다. 그중 하나만 접지봉이나 접지 매트에 닿게 해도 랙 전체가 접지가 됩니다",
   "pgtelegraph.ponder.equipment_rack.text_3": "접지된 랙 어디에든 닿은 피뢰기는 접지된 것으로 칩니다. 피뢰기마다 따로 접지할 필요가 없습니다",
   "pgtelegraph.ponder.dtmf_decoder.header": "DTMF 원격 제어",
@@ -1360,5 +1360,7 @@
   "block.pgtelegraph.creative_antenna.tooltip.summary": "시험용 안테나입니다. _모든 주파수에서 SWR 1:1_이고 자체 손실이 없으며, 2.15 dBi 무지향입니다. 높이는 서 있는 곳이 아니라 _값 칸(1~2500 m, ×1 / ×10 줄)_으로 정해서 전파 거리를 시험할 수 있습니다. 동축 손실은 실제처럼 그대로 있습니다.",
   "pgtelegraph.creative_antenna.height": "안테나 높이",
   "pgtelegraph.creative_antenna.at": "높이 %s m",
-  "pgtelegraph.ponder.creative_radio.text_5": "크리에이티브 안테나는 모든 주파수에서 정합되고 자체 손실이 없습니다. 값 칸으로 높이를 1~2500 m로 정합니다"
+  "pgtelegraph.ponder.creative_radio.text_5": "크리에이티브 안테나는 모든 주파수에서 정합되고 자체 손실이 없습니다. 값 칸으로 높이를 1~2500 m로 정합니다",
+  "block.pgtelegraph.equipment_rack.tooltip.condition1": "상자형 장비를 들고 우클릭",
+  "block.pgtelegraph.equipment_rack.tooltip.behaviour1": "그 칸에 장착 (부수면 장비와 랙이 둘 다 나옵니다)"
 }

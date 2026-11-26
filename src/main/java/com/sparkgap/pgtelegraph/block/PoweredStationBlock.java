@@ -49,18 +49,18 @@ public class PoweredStationBlock<T extends BlockEntity> extends ElectricBlock im
         this.type = type;
         this.use = use;
         setTerminalCollection(BlockStateTerminalCollection.builder(this)
-                .forAllStates(s -> Geometry.terminals(terms, new Component[]{
+                .forAllStates(s -> Geometry.terminals(Rack.racked(s) ? Rack.rearTerminals(terms) : terms, new Component[]{
                         Component.translatable("pgtelegraph.terminal.pwr_pos"),
                         Component.translatable("pgtelegraph.terminal.pwr_neg")}, s.getValue(DeviceBlock.FACING)))
                 .withShapeMapper(s -> shapes[s.getValue(DeviceBlock.FACING).get2DDataValue()])
                 .build());
-        registerDefaultState(defaultBlockState().setValue(DeviceBlock.FACING, Direction.NORTH));
+        registerDefaultState(defaultBlockState().setValue(DeviceBlock.FACING, Direction.NORTH).setValue(Rack.RACKED, false));
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
-        builder.add(DeviceBlock.FACING);
+        builder.add(DeviceBlock.FACING, Rack.RACKED);
     }
 
     @Override
@@ -70,7 +70,9 @@ public class PoweredStationBlock<T extends BlockEntity> extends ElectricBlock im
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
-        return shapes[state.getValue(DeviceBlock.FACING).get2DDataValue()];
+        VoxelShape s = shapes[state.getValue(DeviceBlock.FACING).get2DDataValue()];
+        if (Rack.racked(state)) return net.minecraft.world.phys.shapes.Shapes.or(s, Rack.POSTS);
+        return s;
     }
 
     @Override

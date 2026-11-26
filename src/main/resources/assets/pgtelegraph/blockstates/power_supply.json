@@ -1,1 +1,34 @@
-{"variants": {"facing=north": {"model": "pgtelegraph:block/power_supply"}, "facing=east": {"model": "pgtelegraph:block/power_supply", "y": 90}, "facing=south": {"model": "pgtelegraph:block/power_supply", "y": 180}, "facing=west": {"model": "pgtelegraph:block/power_supply", "y": 270}}}
+{
+ "variants": {
+  "facing=north,racked=false": {
+   "model": "pgtelegraph:block/power_supply"
+  },
+  "facing=north,racked=true": {
+   "model": "pgtelegraph:block/power_supply_racked"
+  },
+  "facing=east,racked=false": {
+   "model": "pgtelegraph:block/power_supply",
+   "y": 90
+  },
+  "facing=east,racked=true": {
+   "model": "pgtelegraph:block/power_supply_racked",
+   "y": 90
+  },
+  "facing=south,racked=false": {
+   "model": "pgtelegraph:block/power_supply",
+   "y": 180
+  },
+  "facing=south,racked=true": {
+   "model": "pgtelegraph:block/power_supply_racked",
+   "y": 180
+  },
+  "facing=west,racked=false": {
+   "model": "pgtelegraph:block/power_supply",
+   "y": 270
+  },
+  "facing=west,racked=true": {
+   "model": "pgtelegraph:block/power_supply_racked",
+   "y": 270
+  }
+ }
+}

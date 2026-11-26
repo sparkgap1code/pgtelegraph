@@ -51,15 +51,29 @@ public class EquipmentRackBlock extends Block {
         Level l = ctx.getLevel();
         BlockPos p = ctx.getClickedPos();
         return defaultBlockState().setValue(DeviceBlock.FACING, ctx.getHorizontalDirection().getOpposite())
-                .setValue(UP, l.getBlockState(p.above()).getBlock() instanceof EquipmentRackBlock)
-                .setValue(DOWN, l.getBlockState(p.below()).getBlock() instanceof EquipmentRackBlock);
+                .setValue(UP, Rack.isRack(l.getBlockState(p.above())))
+                .setValue(DOWN, Rack.isRack(l.getBlockState(p.below())));
     }
 
     @Override
     protected BlockState updateShape(BlockState state, Direction dir, BlockState neighbor, LevelAccessor level, BlockPos pos, BlockPos np) {
-        if (dir == Direction.UP) return state.setValue(UP, neighbor.getBlock() instanceof EquipmentRackBlock);
-        if (dir == Direction.DOWN) return state.setValue(DOWN, neighbor.getBlock() instanceof EquipmentRackBlock);
+        if (dir == Direction.UP) return state.setValue(UP, Rack.isRack(neighbor));
+        if (dir == Direction.DOWN) return state.setValue(DOWN, Rack.isRack(neighbor));
         return state;
+    }
+
+    /** a box-type device in hand: mount it in this cell */
+    @Override
+    protected net.minecraft.world.ItemInteractionResult useItemOn(net.minecraft.world.item.ItemStack held, BlockState state, Level level, BlockPos pos,
+                                                                  net.minecraft.world.entity.player.Player player, net.minecraft.world.InteractionHand hand,
+                                                                  net.minecraft.world.phys.BlockHitResult hit) {
+        if (!(held.getItem() instanceof net.minecraft.world.item.BlockItem bi) || !Rack.rackable(bi.getBlock()))
+            return net.minecraft.world.ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+        if (!level.isClientSide && Rack.mount(level, pos, state, bi.getBlock())) {
+            if (!player.getAbilities().instabuild) held.shrink(1);
+            level.playSound(null, pos, net.minecraft.sounds.SoundEvents.IRON_TRAPDOOR_CLOSE, net.minecraft.sounds.SoundSource.BLOCKS, 0.7f, 1.2f);
+        }
+        return net.minecraft.world.ItemInteractionResult.sidedSuccess(level.isClientSide);
     }
 
     @Override
@@ -92,9 +106,9 @@ public class EquipmentRackBlock extends Block {
                 BlockPos n = c.relative(d);
                 if (!level.isLoaded(n)) continue;
                 if (LightningArresterBlock.isEarth(level, n)) return true;
-                if (level.getBlockState(n).getBlock() instanceof EquipmentRackBlock && seen.add(n)) q.add(n);
+                if (Rack.isRack(level.getBlockState(n)) && seen.add(n)) q.add(n);
             }
-            if (LightningArresterBlock.isEarth(level, c.below(2)) && !(level.getBlockState(c.below()).getBlock() instanceof EquipmentRackBlock))
+            if (LightningArresterBlock.isEarth(level, c.below(2)) && !Rack.isRack(level.getBlockState(c.below())))
                 return true;
         }
         return false;

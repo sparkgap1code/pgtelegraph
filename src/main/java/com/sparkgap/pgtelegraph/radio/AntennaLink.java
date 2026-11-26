@@ -176,6 +176,8 @@ public record AntennaLink(BlockPos feed, Kind kind, double lengthM, double f0MHz
      */
     public static AntennaLink scan(Level level, BlockPos device, Direction onlySide) {
         // only through coax: an antenna, amplifier or coil merely standing next to the device is not connected
+        BlockState devState = level.getBlockState(device);
+        if (onlySide == null && com.sparkgap.pgtelegraph.block.Rack.racked(devState)) onlySide = com.sparkgap.pgtelegraph.block.Rack.rear(devState);
         Direction[] sides = onlySide == null ? Direction.values() : new Direction[]{onlySide};
         Map<BlockPos, BlockPos> parent = new HashMap<>();
         ArrayDeque<BlockPos> queue = new ArrayDeque<>();
@@ -239,6 +241,7 @@ public record AntennaLink(BlockPos feed, Kind kind, double lengthM, double f0MHz
                     : passThrough(level.getBlockState(c))
                     ? tunerLinks(level, c) : CoaxBlock.links(level, c);
             for (BlockPos n : next) {
+                if (com.sparkgap.pgtelegraph.block.Rack.separateLines(level, c, n)) continue; // two racked units' own feed lines
                 if (!parent.containsKey(n)) {
                     parent.put(n, c);
                     queue.add(n);
