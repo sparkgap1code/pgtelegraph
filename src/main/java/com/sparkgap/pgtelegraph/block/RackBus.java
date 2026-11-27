@@ -30,7 +30,9 @@ import java.util.WeakHashMap;
 /**
  * The rack's 13.8 V wiring: when a 13.8 V unit is mounted in a rack group that has a power
  * distribution panel mounted in it (or the panel comes later), real insulated copper wire is run
- * from a free panel output to the unit's PWR+ and from the panel's GND to its PWR-. The panel's
+ * from a free panel output to the unit's PWR+ and from the panel's GND to its PWR-. A DC power
+ * supply or UPS mounted in the same group is wired to the panel's input the same way, so the
+ * whole rack only needs the grid on the supply's IN. The panel's
  * fuses, the wire's resistance and everything else then work as with hand-laid wire.
  */
 @EventBusSubscriber(modid = PgTelegraph.MODID)
@@ -40,7 +42,9 @@ public final class RackBus {
     /** units that run on 13.8 V and have PWR+ / PWR- as terminals 0 and 1 */
     public static final Set<String> BUS_UNITS = Set.of("transmitter", "receiver", "beacon", "repeater", "qso_robot",
             "dtmf_decoder", "aprs_station", "sstv_monitor");
-    private static final int PANEL_GND = 1, PANEL_OUT0 = 2, PANEL_OUTS = 4, MAX_GROUP = 128;
+    private static final int PANEL_IN = 0, PANEL_GND = 1, PANEL_OUT0 = 2, PANEL_OUTS = 4, MAX_GROUP = 128;
+    /** a 13.8 V supply's OUT+ / OUT- */
+    private static final int SUPPLY_OUT_POS = 2, SUPPLY_OUT_NEG = 3;
 
     private record Job(BlockPos pos, long at) {}
 
@@ -76,6 +80,16 @@ public final class RackBus {
 
     static boolean busUnit(Level level, BlockPos p) {
         return Rack.racked(level.getBlockState(p)) && BUS_UNITS.contains(id(level, p));
+    }
+
+    /** a mounted 13.8 V supply: the DC power supply or the UPS (a UPS is preferred) */
+    static int supplyRank(Level level, BlockPos p) {
+        if (!Rack.racked(level.getBlockState(p))) return 0;
+        return switch (id(level, p)) {
+            case "ups" -> 2;
+            case "power_supply" -> 1;
+            default -> 0;
+        };
     }
 
     static boolean panel(Level level, BlockPos p) {
@@ -117,6 +131,22 @@ public final class RackBus {
             break;
         }
         if (panel == null) return;
+        // the supply feeds the panel: OUT+ to IN+, OUT- to GND (if nothing is on the panel's input yet)
+        if (wires(level, panel, PANEL_IN) == 0) {
+            BlockPos supply = null;
+            int rank = 0;
+            for (BlockPos p : g) {
+                int r = supplyRank(level, p);
+                if (r > rank) {
+                    rank = r;
+                    supply = p;
+                }
+            }
+            if (supply != null) {
+                connect(level, supply, SUPPLY_OUT_POS, panel, PANEL_IN, DyeColor.RED);
+                connect(level, supply, SUPPLY_OUT_NEG, panel, PANEL_GND, DyeColor.BLACK);
+            }
+        }
         for (BlockPos u : g) {
             if (!busUnit(level, u) || wires(level, u, 0) != 0) continue; // only units with nothing on PWR+ yet
             int best = -1, bestN = Integer.MAX_VALUE;
