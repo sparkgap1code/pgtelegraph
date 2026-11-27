@@ -92,6 +92,11 @@ public final class ClientAccess {
         else if (mc.screen == null) mc.setScreen(new VnaScreen(d));
     }
 
+    public static void coaxChoice(com.sparkgap.pgtelegraph.network.Batch2Payloads.CoaxChoice m) {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.screen == null || mc.screen instanceof CoaxScreen) mc.setScreen(new CoaxScreen(m));
+    }
+
     public static void openAprs(BlockPos pos) {
         open(new AprsScreen(pos));
     }

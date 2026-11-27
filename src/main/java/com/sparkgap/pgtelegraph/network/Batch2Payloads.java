@@ -55,6 +55,8 @@ public final class Batch2Payloads {
         r.playToServer(DtmfKey.TYPE, DtmfKey.CODEC, DtmfKey::handle);
         r.playToServer(HandheldTone.TYPE, HandheldTone.CODEC, HandheldTone::handle);
         r.playToServer(VnaRequest.TYPE, VnaRequest.CODEC, VnaRequest::handle);
+        r.playToClient(CoaxChoice.TYPE, CoaxChoice.CODEC, CoaxChoice::handle);
+        r.playToServer(CoaxAnswer.TYPE, CoaxAnswer.CODEC, CoaxAnswer::handle);
         r.playToClient(VnaData.TYPE, VnaData.CODEC, VnaData::handle);
     }
 
@@ -79,6 +81,61 @@ public final class Batch2Payloads {
                 Player p = ctx.player();
                 if (near(p, m.pos) && p.level().getBlockEntity(m.pos) instanceof com.sparkgap.pgtelegraph.block.DtmfDecoderBlockEntity be)
                     be.configure(m.on, m.off, m.mode, m.hz);
+            });
+        }
+    }
+
+    // ---------------- which set a piece of coax goes to ----------------
+    public record CoaxChoice(BlockPos coax, java.util.List<BlockPos> devices, java.util.List<String> names, BlockPos current, boolean hasCurrent)
+            implements CustomPacketPayload {
+        public static final Type<CoaxChoice> TYPE = mk("coax_choice");
+        public static final StreamCodec<FriendlyByteBuf, CoaxChoice> CODEC = StreamCodec.of((b, m) -> {
+            b.writeBlockPos(m.coax);
+            b.writeVarInt(m.devices.size());
+            for (int i = 0; i < m.devices.size(); i++) {
+                b.writeBlockPos(m.devices.get(i));
+                b.writeUtf(m.names.get(i), 120);
+            }
+            b.writeBlockPos(m.current);
+            b.writeBoolean(m.hasCurrent);
+        }, b -> {
+            BlockPos c = b.readBlockPos();
+            int n = Math.min(6, b.readVarInt());
+            java.util.List<BlockPos> d = new java.util.ArrayList<>();
+            java.util.List<String> s = new java.util.ArrayList<>();
+            for (int i = 0; i < n; i++) {
+                d.add(b.readBlockPos());
+                s.add(b.readUtf(120));
+            }
+            return new CoaxChoice(c, d, s, b.readBlockPos(), b.readBoolean());
+        });
+
+        @Override
+        public Type<? extends CustomPacketPayload> type() {
+            return TYPE;
+        }
+
+        static void handle(CoaxChoice m, IPayloadContext ctx) {
+            ctx.enqueueWork(() -> com.sparkgap.pgtelegraph.client.ClientAccess.coaxChoice(m));
+        }
+    }
+
+    public record CoaxAnswer(BlockPos coax, BlockPos device, boolean any) implements CustomPacketPayload {
+        public static final Type<CoaxAnswer> TYPE = mk("coax_answer");
+        public static final StreamCodec<FriendlyByteBuf, CoaxAnswer> CODEC = StreamCodec.of((b, m) -> {
+            b.writeBlockPos(m.coax);
+            b.writeBlockPos(m.device);
+            b.writeBoolean(m.any);
+        }, b -> new CoaxAnswer(b.readBlockPos(), b.readBlockPos(), b.readBoolean()));
+
+        @Override
+        public Type<? extends CustomPacketPayload> type() {
+            return TYPE;
+        }
+
+        static void handle(CoaxAnswer m, IPayloadContext ctx) {
+            ctx.enqueueWork(() -> {
+                if (ctx.player() instanceof ServerPlayer sp) com.sparkgap.pgtelegraph.block.CoaxBindings.answer(sp, m.coax, m.device, m.any);
             });
         }
     }

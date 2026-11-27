@@ -1186,7 +1186,7 @@
   "pgtelegraph.panel.replaced": "끊어진 퓨즈를 갈았습니다",
   "pgtelegraph.panel.burnt": "탔습니다 (과전압 또는 과전류)",
   "block.pgtelegraph.equipment_rack": "장비 랙 (19인치)",
-  "block.pgtelegraph.equipment_rack.tooltip.summary": "위아래로 이어지는 강철 랙 프레임입니다. _상자형 장비를 들고 랙을 우클릭하면 그 칸에 장착_됩니다. 장착하면 얇게 들어가고, 전선 단자는 _뒷면 단자대_로, 동축은 _뒷면 한 곳_으로만 연결됩니다. 장비마다 뒤에 붙인 동축은 서로 섞이지 않으니 무전기마다 자기 안테나를 쓸 수 있습니다. 같은 랙 묶음에 _전원 분배 패널_을 장착하면 13.8 V 장비에 전원선이 자동으로 깔립니다. 서로 닿은 랙과 장착된 장비는 한 덩어리 금속이라, 하나만 접지해도 전체가 접지되고 닿은 피뢰기도 접지됩니다.",
+  "block.pgtelegraph.equipment_rack.tooltip.summary": "위아래로 이어지는 강철 랙 프레임입니다. _상자형 장비를 들고 랙을 우클릭하면 그 칸에 장착_됩니다. 장착하면 얇게 들어가고, 전선 단자는 _뒷면 단자대_로 옮겨집니다. 동축을 장비 두 대 이상에 닿는 자리(랙 옆 등)에 놓으면 _어느 장비에 연결할지 고르는 창_이 뜨고, 고른 장비만 그 동축을 씁니다. 같은 랙 묶음에 _전원 분배 패널_을 장착하면 13.8 V 장비에 전원선이 뒷면으로 자동으로 깔립니다. 서로 닿은 랙과 장착된 장비는 한 덩어리 금속이라, 하나만 접지해도 전체가 접지되고 닿은 피뢰기도 접지됩니다.",
   "block.pgtelegraph.aprs_station": "APRS 수신국",
   "block.pgtelegraph.aprs_station.tooltip.summary": "144.390 MHz에서 _APRS 위치 보고_를 받아 지도에 찍는 수신국입니다. 위의 _주파수 칸 두 개_에 아이템을 놓으면 그 조합이 네트워크 키가 되고, 같은 키를 쓰는 트래커와 차량 무전기의 보고만 받습니다. 동축으로 안테나가 필요하고, 13.8 V(10 W)로 동작합니다.",
   "block.pgtelegraph.aprs_station.tooltip.condition1": "주파수 칸에 아이템",
@@ -1312,7 +1312,7 @@
   "pgtelegraph.ponder.ups_power_panel.text_4": "장비마다 PWR+는 OUT 하나에, PWR−는 모두 GND에 연결합니다. 한 출력이 합선되면 그 퓨즈만 끊어지고 나머지는 계속 켜져 있습니다",
   "pgtelegraph.ponder.ups_power_panel.text_5": "빈손으로 누르면 끊어진 퓨즈를 갈고, 웅크리고 누르면 퓨즈 용량(5 / 10 / 20 / 30 A)이 바뀝니다. 퓨즈가 끊어지면 표시등이 깜빡입니다",
   "pgtelegraph.ponder.equipment_rack.header": "장비 랙과 접지",
-  "pgtelegraph.ponder.equipment_rack.text_1": "장비 랙은 위아래로 이어져 하나의 강철 프레임이 됩니다. 상자형 장비를 들고 랙을 우클릭하면 그 칸에 얇게 장착되고, 단자와 동축 단자는 뒷면으로 옮겨집니다",
+  "pgtelegraph.ponder.equipment_rack.text_1": "장비 랙은 위아래로 이어져 하나의 강철 프레임이 됩니다. 상자형 장비를 들고 랙을 우클릭하면 그 칸에 얇게 장착되고, 전선 단자는 뒷면으로 옮겨집니다",
   "pgtelegraph.ponder.equipment_rack.text_2": "서로 닿은 랙은 한 덩어리 금속입니다. 그중 하나만 접지봉이나 접지 매트에 닿게 해도 랙 전체가 접지가 됩니다",
   "pgtelegraph.ponder.equipment_rack.text_3": "접지된 랙 어디에든 닿은 피뢰기는 접지된 것으로 칩니다. 피뢰기마다 따로 접지할 필요가 없습니다",
   "pgtelegraph.ponder.dtmf_decoder.header": "DTMF 원격 제어",
@@ -1382,5 +1382,10 @@
   "pgtelegraph.ponder.operating_selector.text_2": "전건은 KEY IN / COM에, 각 송신기의 KEY는 OUT1~OUT4에, 송신기들의 KEY COM은 모두 COM에 잇습니다",
   "pgtelegraph.ponder.operating_selector.text_3": "우클릭하면 다음 송신기를 고르고(웅크리면 이전, 0은 꺼짐), 레드스톤 신호 1~4로도 고릅니다. 램프에 고른 번호가 켜집니다",
   "pgtelegraph.ponder.operating_selector.text_4": "선택기에 붙인 마이크는 고른 송신기로만 말이 갑니다",
-  "pgtelegraph.ponder.operating_selector.text_5": "이름표로 구분하십시오. 이름을 붙인 이름표로 장비를 우클릭하면, 고글과 주파수 화면과 선택기에 그 이름이 나옵니다"
+  "pgtelegraph.ponder.operating_selector.text_5": "이름표로 구분하십시오. 이름을 붙인 이름표로 장비를 우클릭하면, 고글과 주파수 화면과 선택기에 그 이름이 나옵니다",
+  "pgtelegraph.coax.title": "이 동축을 어느 장비에 연결할까요?",
+  "pgtelegraph.coax.hint": "고른 장비만 이 동축을 씁니다. 나중에 바꾸려면 웅크리고 빈손으로 동축을 우클릭하십시오",
+  "pgtelegraph.coax.any_button": "지정 안 함 (닿은 장비 모두)",
+  "pgtelegraph.coax.any": "동축 연결 지정을 풀었습니다",
+  "pgtelegraph.coax.bound": "동축 연결: %s"
 }

@@ -21,8 +21,8 @@ import java.util.Set;
 /**
  * Rack mounting (랙 장착): right-click an equipment rack with a box-type device and the device goes
  * into that rack cell - drawn shallow inside the rack frame, its terminals moved to a strip on the
- * back, its coax port on the back only (coax behind one unit never joins coax behind another, so
- * every radio keeps its own feed line). A mounted unit is part of the rack's steel: it is grounded
+ * back. Coax touching two or more sets asks which one it goes to ({@link CoaxBindings}); coax right
+ * behind one unit never joins coax behind another. A mounted unit is part of the rack's steel: it is grounded
  * with the rack group. Breaking it gives back the device and the rack.
  */
 @EventBusSubscriber(modid = PgTelegraph.MODID)
